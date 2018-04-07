@@ -1,0 +1,10 @@
+.box1 {
+    background: #f5f505;
+    width: 33%;
+    padding-bottom: 33%;
+    border: 2px#d9d919;
+    float: left;
+    margin: 0.15%;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+}
