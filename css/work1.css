@@ -1,0 +1,34 @@
+body{
+    font-size: 62.5%;
+    margin: 0;
+}
+header{
+    background-color: #68cdd5;
+    width: 100%;
+    height: 3rem;
+    margin:0；
+}
+.word1{ position: absolute;
+    left: 1rem;
+    top: 0;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 3rem;
+    font-weight:300;
+}
+.word2{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 3rem;
+    font-weight:900;
+}
+.word3{
+    position:absolute;
+    top: 0;
+    right:1rem;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 3rem;
+    font-weight:300;
+}
