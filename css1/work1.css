@@ -1,0 +1,101 @@
+body{ background-color:rgb(240, 233, 233);
+    font-size: 62.5%;
+    margin: 0;
+}
+header{
+    background-color: #68cdd5;
+    width: 100%;
+    height: 3rem;
+    margin:0；
+}
+.word1{ position: absolute;
+    left: 1rem;
+    top: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 3rem;
+    font-weight:300;
+}
+.word2{
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 3rem;
+    font-weight:900;
+}
+.word3{
+    position:absolute;
+    top: 0;
+    right:1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 3rem;
+    font-weight:300;
+}
+form{
+    background: #fff;
+    position: absolute;
+    top:4rem;
+    right:0;
+    width: 100%;
+    height: 3.1rem;
+}
+.word4{
+    position:relative;
+    top: 0.5rem;
+    left: 1.5rem; 
+    height: 2rem;
+    
+}
+.word5{
+    border:#fff;
+    position: absolute;
+    top:0rem;
+    right:0;
+    width: 85%;
+    height: 3rem;
+}
+form2{
+    background: #fff;
+    position: absolute;
+    top:8rem;
+    right:0;
+    width: 100%;
+    height: 3.1rem;
+}
+.word6{
+    border:#fff;
+    position: absolute;
+    top:0rem;
+    right:0;
+    width: 85%;
+    height: 3rem;
+}
+.word7{
+    position:relative;
+    top: 0.5rem;
+    left: 1.5rem; 
+    height: 2rem;
+}
+footer{
+    background-color: #68cdd5;
+    position:relative;
+    top: 9rem;
+    width: 100%;
+    height: 3rem;
+}
+.word8{
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 3rem;
+    font-weight:900;
+}
+.word9{
+    font-size: 1rem;
+    color: #68cdd5;
+    position: relative;
+    top:0.5rem;
+    float: right;
+}
+
