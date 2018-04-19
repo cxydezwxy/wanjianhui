@@ -1,0 +1,237 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: #5fc0cd;
+    height: 6rem;
+    width: 100%;
+    text-align: center;
+    line-height: 6rem;
+}
+
+.box1 {
+    background: rgb(40, 168, 177);
+    color: #fff;
+    border: none;
+    height: 4rem;
+    line-height: 2rem;
+    width: 8rem;
+    border-radius: 10px;
+}
+
+.box2 {
+    background: #fff;
+    color: rgb(40, 168, 177);
+    border: none;
+    height: 4rem;
+    line-height: 1rem;
+    width: 8rem;
+    border-radius: 10px;
+}
+
+.png1 {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    height: 2.5rem;
+}
+
+.box3 {
+    padding: 0;
+    text-align: center;
+    width: 32%;
+    border: none;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: rgb(155, 147, 147);
+}
+
+.box4 {
+    width: 100%;
+    height: 100px;
+    border: none;
+}
+
+span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(bike9.png);
+    background-repeat: no-repeat;
+    margin: 5px;
+    padding-top: 0.5rem;
+}
+
+.box5 {
+    background-position: -10px -10px;
+    position: absolute;
+    top: 15rem;
+    left: 1rem;
+}
+
+.box6 {
+    background-position: -10px -54px;
+    position: absolute;
+    top: 10rem;
+    left: 1rem;
+}
+
+.box11 {
+    background-position: -10px -54px;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+
+.box12 {
+    background-position: -10px -10px;
+    position: relative;
+    top: 6rem;
+    left: -2rem;
+}
+
+.box7 {
+    margin: 0;
+    color: rgb(182, 172, 172);
+    font-size: 1.5rem;
+    padding: 0.6rem 4rem;
+    border-top: 1px rgb(182, 172, 172) solid;
+    width: 100%;
+}
+
+.box8 {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding: 0.5rem 4rem;
+    margin: 0;
+}
+
+.box9 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 13.5rem;
+    right: 3rem;
+}
+
+.png2 {
+    position: absolute;
+    top: 13.5rem;
+    right: 2rem;
+    height: 1.2rem;
+}
+
+.box10 {
+    margin: 0;
+    color: rgb(182, 172, 172);
+    font-size: 1.5rem;
+    padding: 0.1rem 4rem;
+}
+
+.box13 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 21.8rem;
+    right: 3rem;
+}
+
+.png3 {
+    position: absolute;
+    top: 21.8rem;
+    right: 2rem;
+    height: 1.2rem;
+}
+
+.box14 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 30rem;
+    right: 3rem;
+}
+
+.png4 {
+    position: absolute;
+    top: 30rem;
+    right: 2rem;
+    height: 1.2rem;
+}
+
+.box15 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 38.5rem;
+    right: 3rem;
+}
+
+.png5 {
+    position: absolute;
+    top: 38.5rem;
+    right: 2rem;
+    height: 1.2rem;
+}
+
+.box16 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 46.8rem;
+    right: 3rem;
+}
+
+.png6 {
+    position: absolute;
+    top: 46.8rem;
+    right: 2rem;
+    height: 1.2rem;
+}
+footer{
+    height:30px;  
+    position:fixed;  
+    bottom:0px;  
+    background: #fff;
+    height: 6rem;
+    width: 100%;
+    text-align: center;
+    white-space:nowrap;
+}
+.png7{
+    position: relative;
+    top:0.1rem;
+   padding: 0.3rem;
+   height: 3rem;
+   
+}
+.png8{
+    height: 6rem;
+    
+}
+.png9{
+    position: relative;
+    top:0.1rem;
+   padding: 0.3rem;
+   height: 3rem;
+  
+}  
+.box17{
+    
+    margin: 0;
+    position: relative;
+    top:0.1rem;
+    color:  #5fc0cd;
+    font-size: 1.5rem;
+    white-space:nowrap;
+    width: 10%;
+}
