@@ -1,0 +1,302 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: #5fc0cd;
+    height: 6rem;
+    width: 100%;
+    text-align: center;
+    line-height: 6rem;
+    padding: 0;
+}
+
+.box1 {
+    padding: 0;
+    background: rgb(40, 168, 177);
+    color: #fff;
+    border: 1px rgb(40, 168, 177) solid;
+    height: 4rem;
+    line-height: 2rem;
+    width: 8rem;
+    border-radius: 10px;
+}
+
+.box2 {
+    padding: 0rem;
+    background: #fff;
+    color: rgb(40, 168, 177);
+    border: 1px #fff solid;
+    height: 4rem;
+    line-height: 1rem;
+    width: 8rem;
+    border-radius: 10px !important;
+}
+
+.btn-group-lg>.btn {
+    padding: 0px 0px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 10px;
+}
+
+.png1 {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    height: 2.5rem;
+}
+
+.box21 {
+    height: 3rem;
+}
+
+.dropdown {
+    line-height: 3rem;
+    width: 32%;
+    text-align: center;
+    height: 3rem;
+    background: #fff;
+}
+
+.box19 {
+    position: absolute;
+    top: 0.6rem;
+    border-right: 1px rgb(155, 147, 147) solid;
+    height: 2rem;
+    line-height: 1rem;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.box25 {
+    position: absolute;
+    top: 0.5rem;
+    height: 2rem;
+    line-height: 3rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dropdown-toggle {
+    border: none;
+    color: rgb(155, 147, 147);
+    position: relative;
+    top: -0.6rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 100%;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    text-align: center;
+}
+
+.box3 {
+    padding: 0;
+    text-align: center;
+    width: 32%;
+    border: none;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: rgb(155, 147, 147);
+}
+
+.box4 {
+    width: 100%;
+    height: 100px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+}
+
+ul {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(bike9.png);
+    background-repeat: no-repeat;
+    margin: 5px;
+    padding-top: 0.5rem;
+}
+
+.box5 {
+    background-position: -10px -10px;
+    position: absolute;
+    top: 13.5rem;
+    left: 1rem;
+}
+
+.box6 {
+    background-position: -10px -54px;
+    position: absolute;
+    top: 9rem;
+    left: 1rem;
+}
+
+.box11 {
+    background-position: -10px -54px;
+    position: relative;
+    top: 0.5rem;
+    left: 1rem;
+}
+
+.box12 {
+    background-position: -10px -10px;
+    position: relative;
+    top: 5rem;
+    left: -3.5rem;
+}
+
+.box7 {
+    margin: 0;
+    color: rgb(182, 172, 172);
+    font-size: 1.5rem;
+    padding: 0.6rem 4rem;
+    border-top: 1px rgb(182, 172, 172) solid;
+    width: 100%;
+}
+
+.box8 {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding: 0rem 4rem;
+    margin: 0;
+    line-height: 2rem;
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.box9 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 3rem;
+    line-height: 2rem;
+}
+
+.png2 {
+    position: absolute;
+    right: 2rem;
+    height: 1.5rem;
+    line-height: 0rem;
+}
+
+.box10 {
+    margin: 0;
+    color: rgb(182, 172, 172);
+    font-size: 1.5rem;
+    padding: 0.5rem 4rem;
+}
+
+.box13 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 3rem;
+    line-height: 2rem;
+}
+
+.box14 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 30rem;
+    right: 3rem;
+}
+
+.box15 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 38.5rem;
+    right: 3rem;
+}
+
+.box16 {
+    margin: 0;
+    color: red;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 46.8rem;
+    right: 3rem;
+}
+
+.png6 {
+    position: absolute;
+    top: 46.8rem;
+    right: 2rem;
+    height: 1.2rem;
+}
+
+.box20 {
+    margin-bottom: 6rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    background-color: #f8fafb;
+}
+
+footer img {
+    display: block;
+    transform: scale(.6);
+    padding: 0 1.6rem;
+}
+
+.box17 {
+    padding: 0 1.5rem;
+}
+
+.box18 {
+    padding: 0 1.6rem;
+    color: rgb(168, 164, 164);
+}
