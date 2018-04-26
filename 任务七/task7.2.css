@@ -1,0 +1,204 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    margin: 0;
+    background: darkturquoise;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    background: darkturquoise;
+    text-align: center;
+    line-height: 4rem;
+    border-bottom: 1px rgb(184, 187, 186) solid;
+}
+
+.pho8 {
+    float: left;
+    height: 2.5rem;
+    padding: 0.5rem;
+}
+
+.box19 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.pho9 {
+    float: right;
+    height: 2.5rem;
+    padding: 0.5rem;
+}
+
+.pho10 {
+    position: relative;
+    top: 2rem;
+    height: 10rem;
+}
+
+.box20 {
+    position: relative;
+    top: -3rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.box21 {
+    margin: 0;
+    position: relative;
+    top: -3rem;
+    font-size: 2em;
+    color: rgb(245, 169, 55);
+    padding: 0 3rem 0 3rem;
+    text-align: left;
+}
+
+.box22 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.box23 {
+    position: absolute;
+    top: 24rem;
+    left: 3rem;
+}
+
+.box24 {
+    position: absolute;
+    left: 3rem;
+    top: 26rem
+}
+
+.box25 {
+    position: absolute;
+    left: 10rem;
+    top: 26rem
+}
+
+.box26 {
+    position: absolute;
+    left: 17rem;
+    top: 26rem
+}
+
+.box29 {
+    position: absolute;
+    left: 3rem;
+    top: 28rem
+}
+
+.box30 {
+    position: absolute;
+    left: 10rem;
+    top: 28rem
+}
+
+.box27 {
+    position: absolute;
+    left: 3rem;
+    top: 30rem
+}
+
+.box28 {
+    position: absolute;
+    left: 3rem;
+    top: 32rem
+}
+
+.box31 {
+    position: absolute;
+    top: 35rem;
+    height: 7rem;
+    width: 100%;
+    background: #fff;
+}
+
+.box32 {
+    font-size: 2rem;
+    position: absolute;
+    left: 3rem;
+}
+
+.box33 {
+    position: relative;
+    left: 5rem;
+    top: 0.5rem;
+    color: rgb(201, 197, 197);
+}
+
+.box34 {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    color: rgb(136, 132, 132);
+    font-size: 1.5rem;
+}
+
+.box35 {
+    position: absolute;
+    top: 4.5rem;
+    left: 3rem;
+    color: rgb(136, 132, 132);
+    font-size: 1.5rem;
+}
+
+.box36 {
+    position: absolute;
+    top: 42rem;
+    height: 7rem;
+    width: 100%;
+    background: #fff;
+    border-top: 1px rgb(184, 187, 186) solid;
+}
+
+.box37 {
+    position: absolute;
+    top: 49rem;
+    height: 7rem;
+    width: 100%;
+    background: #fff;
+    border-top: 1px rgb(184, 187, 186) solid;
+    margin-bottom: 6rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(41, 189, 224, 0.7);
+    line-height: 6rem;
+   
+ 
+}
+.box38{
+    position:relative; 
+    background: rgb(247, 53, 95);
+    border:none;
+    height: 4rem;
+    width: 40%;
+    z-index: 2;    
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 1rem;
+      
+   
+}
+.box39{
+    margin-left: 1rem;
+    background: rgb(238, 208, 39);
+    border:none;
+    height: 4rem;
+    width: 40%;
+    z-index: 2;
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 1rem;
+}

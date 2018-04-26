@@ -1,0 +1,130 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+}
+
+header {
+    background: rgb(53, 187, 187);
+    height: 3rem;
+    width: 97%;
+}
+
+.pho1 {
+    height: 3rem;
+    padding: 0.5rem;
+    width: 3rem;
+}
+
+main {
+    background: rgb(241, 238, 238);
+    height: 53rem;
+    width: 97%;
+}
+
+.box1 {
+    width: 100%;
+    color: rgb(211, 203, 203);
+    font-size: 2rem;
+    height: 4rem;
+}
+
+.btn-group {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 1rem 1rem;
+    float: right;
+    height: 3rem;
+}
+
+.pho2 {
+    float: right;
+    position: relative;
+    top: -3rem;
+    height: 2rem;
+    padding-right: 1rem;
+}
+
+.box2 {
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    background: #fff;
+    width: 97%;
+    float: right;
+    border-right: 1px rgb(241, 238, 238) solid;
+    height: 47rem;
+}
+
+.box3 {
+    color: rgb(241, 145, 54);
+    line-height: 3rem;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px rgb(241, 145, 54) solid;
+    width: 100%;
+    border-right: 1px rgb(241, 238, 238) solid;
+    height: 5rem;
+    text-align: center;
+}
+
+.box4 {
+    background: rgb(53, 187, 187);
+    color: #fff;
+    height: 8rem;
+    width: 90%;
+    font-size: 3rem;
+}
+
+.btn-group2 {
+    padding: 0.5rem 3rem;
+}
+
+.box5 {
+    color: rgb(211, 203, 203);
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.pho3 {
+    position: absolute;
+    right: 1rem;
+    top: 21rem;
+}
+
+footer {
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: 3rem;
+}
+
+.box7 {
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: 3rem;
+}
+
+.box6 {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: rgb(53, 187, 187);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 -1rem;
+}
+
+.box8 {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: rgb(211, 203, 203);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 -1rem;
+}
