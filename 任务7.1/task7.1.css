@@ -1,0 +1,138 @@
+html {
+    font-size: 62.5%;
+    background:  rgb(83, 199, 245);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    height: 3rem;
+    width: 100%;
+    background:  rgb(83, 199, 245);
+    line-height: 4rem;
+}
+
+.pho4 {
+    float: left;
+    height: 2rem;
+    padding: 1rem 1rem;
+}
+
+.pho5 {
+    float: right;
+    ;
+    height: 2rem;
+    padding: 1rem 1rem;
+}
+
+.box9 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.box10 {
+    background-image: url(pho2.2.png);
+    height: 5rem;
+    font-size: 1.7rem;
+    line-height: 5rem;
+    padding-left: 2rem;
+}
+
+.pho6 {
+    float: right;
+    height: 3rem;
+    position: absolute;
+    top: 5.5rem;
+    right: 2.5rem;
+}
+
+.pho7 {
+    padding-left: 4rem;
+    position: relative;
+    top: -1.4rem;
+}
+
+.box11 {
+    color: #fff;
+    margin: 0;
+    padding-left: 4rem;
+    font-size: 1.4rem;
+    position: relative;
+    top: -1.5rem;
+}
+
+.box13 {
+    height: 25vw;
+    width: 25%;
+    background: rgb(238, 205, 116);
+    text-align: center;
+    margin: 0vw 3vw;
+    display: inline-block;
+    border: 2px #fff solid;
+}
+
+.box14 {
+    height: 75%;
+    line-height: 15vw;
+    justify-content: space-around;
+}
+
+.box15 {
+    background: cadetblue;
+    height: 25%;
+    line-height: 6vw;
+    margin: 0;
+    position: relative;
+    top: -2rem;
+    color: #fff;
+}
+
+.box16 img {
+    width: 5vw;
+}
+
+.box16 {
+    opacity: 0;
+    position: relative;
+    top: -1rem;
+    margin: 0;
+}
+
+.box13:hover .box16 {
+    opacity: 1;
+}
+
+footer {
+    height: 6rem;
+    background: rgb(83, 199, 245);
+    width: 100%;
+    position: fixed;
+    bottom: 0rem;
+    line-height: 6rem;
+    text-align: center;
+}
+
+.box17 {
+    width: 70%;
+    height: 3rem;
+    background: rgb(240, 159, 38);
+    border: none;
+    color: #fff;
+}
+
+.box18 {
+    margin-bottom: 8rem;
+}
+.box40{
+    float: right;
+    height: 3rem;
+    position: absolute;
+    top: 5.5rem;
+    right: 0rem;
+    width: 5.5rem;
+    z-index: 2;
+    opacity:0;
+}
