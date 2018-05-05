@@ -1,0 +1,472 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background: #fff;
+    color: #29b078;
+    line-height: 2rem;
+}
+
+.text1 {
+    float: left;
+    margin: 0;
+}
+
+header img {
+    position: relative;
+    top: 2%;
+    height: 1.3rem;
+}
+
+.pho1 {
+    float: right;
+}
+
+.back {
+    height: 5.5rem;
+    width: 100%;
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+}
+
+.text2 {
+    line-height: 0.1rem;
+    color: #fff;
+    margin: 0;
+    height: 5.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text3 {
+    float: right;
+}
+
+.text33 {
+    float: right;
+    position: relative;
+    top: 3rem;
+    width: 20rem;
+}
+
+.box38 {
+    float: right;
+    position: relative;
+    top: -1rem;
+    right: 15rem;
+}
+
+.box39 {
+    float: right;
+    width: 5rem;
+    color: #fff;
+    height: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.whiteblock {
+    display: inline-block;
+    width: 100%;
+    height: 0.4rem;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.icansee:hover .whiteblock {
+    display: inline-block;
+    position: absolute;
+}
+
+.box40 {
+    float: right;
+    width: 5rem;
+    color: #fff;
+}
+
+.box41 {
+    float: right;
+    width: 5rem;
+    color: #fff;
+}
+
+.box42 {
+    float: right;
+    width: 5rem;
+    color: #fff;
+}
+
+.box43 {
+    background: #29b078;
+    color: #fff;
+    text-align: center;
+}
+
+.box44 {
+    background: #29b078;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.na1 {
+    text-align: center;
+    display: inline;
+}
+
+@media (min-width: 768px) {
+    .na1 {
+        float: right;
+    }
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+.navbar-header button {
+    border: none;
+    background-color: #29b078;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.nav>li>a {
+    position: relative;
+}
+
+a {
+    text-decoration: none
+}
+
+footer {
+    position: relative;
+    bottom: 0rem;
+    width: 100%;
+    height: 10rem;
+    background: #29b078;
+    color: #fff;
+}
+
+@media screen and (max-width:1110px) {
+    footer {
+        height: 15rem;
+        margin-top: 5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    footer {
+        height: 360px;
+        margin-top: 5rem;
+        text-align: left;
+    }
+}
+
+.box1 {
+    position: relative;
+    top: 2rem;
+    height: 10rem;
+}
+
+.box2 {
+    position: relative;
+    top: 2rem;
+    height: 10rem;
+}
+
+.box5 {
+    position: relative;
+    top: 2rem;
+    height: 10rem;
+}
+
+.pho2 {
+    padding-left: 0rem;
+    height: 6rem;
+    padding-top: 0.5rem;
+}
+
+@media screen and (max-width:767px) {
+    .pho2 {
+        position: relative;
+        left: -7rem;
+    }
+}
+
+.text3 {
+    position: relative;
+    top: 3rem;
+    float: left;
+}
+
+.text5 {
+    padding-right: 0.5rem;
+}
+
+.text4 {
+    padding-left: 0.5rem;
+    border-left: 1px #fff solid;
+    padding-right: 0.5rem;
+}
+
+.text6 {
+    padding-left: 0.5rem;
+    border-left: 1px #fff solid;
+    padding-right: 0.5rem;
+}
+
+.box3 {
+    position: relative;
+    top: 1rem;
+}
+
+.box4 {
+    position: relative;
+    top: 1.5rem;
+}
+
+.text7 {
+    padding-right: 2rem;
+}
+
+.text8 {
+    padding-right: 4rem;
+}
+
+.text9 {
+    position: relative;
+    top: -3.5rem;
+    left: 7rem;
+    margin: 0;
+}
+
+@media screen and (max-width:767px) {
+    .text9 {
+        left: 0;
+    }
+}
+
+.text10 {
+    width: 100%;
+    position: relative;
+    top: 0rem;
+    text-align: center;
+    background: #29b078;
+    height: 2rem;
+    color: #fff;
+    border-top: 1px #fff solid;
+}
+
+.text11 {
+    text-align: center;
+    color: #fff;
+    height: 2rem;
+}
+
+.box6 {
+    background-image: url(5.png);
+    height: 30rem;
+    color: #fff;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 30rem;
+}
+
+.text12 {
+    position: relative;
+    top: -20vw;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.text13 {
+    position: relative;
+    top: -16vw;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.text14 {
+    position: relative;
+    top: -16vw;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.pho10 {
+    float: left;
+    height: 3rem;
+    position: relative;
+    top: 1.3rem;
+}
+
+main {
+    background: #fafafa;
+}
+
+.pho12 {
+    padding-top: 0rem;
+    width: 100%;
+    height: 16vw;
+}
+
+.text34 {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.text35 {
+    margin-top: 2rem;
+    color: #29b078;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.box23 {
+    margin: 2rem 0 2rem 0;
+}
+
+.box31 {
+    height: 55rem;
+    background: #fff;
+    text-align: left;
+    border: 1px rgb(192, 188, 188) solid;
+}
+
+.box32 {
+    height: 95rem;
+    background: #fff;
+    border: 1px rgb(192, 188, 188) solid;
+}
+
+@media screen and (max-width:999px) {
+    .box32 {
+        height: 100rem;
+    }
+}
+
+@media screen and (max-width:642px) {
+    .box32 {
+        height: 130rem;
+    }
+}
+
+@media screen and (max-width:545px) {
+    .box32 {
+        height: 140rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .box32 {
+        height: 200rem;
+    }
+}
+
+.text52 {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1px rgb(192, 188, 188) solid;
+}
+
+.text53 {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 -1rem;
+    border: 1px #ff7425 solid;
+    margin-right: 0.5rem;
+}
+
+li:hover .text53 {
+    background-color: #ff650e;
+}
+
+.text54 {
+    color: #29b078;
+}
+
+.box33 {
+    padding-top: 2rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.box34 {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+    padding: 0
+}
+
+.box35 {
+    text-align: center;
+}
+
+.pho13 {
+    padding: 1rem 4rem 2rem 4rem;
+}
+
+.text55 {
+    color: #999999;
+    padding-bottom: 3rem;
+    padding-right: 5rem;
+    padding-left: 17rem;
+    position: relative;
+    top: -11rem;
+    border-bottom: 1px rgb(192, 188, 188) solid;
+}
+
+@media screen and (max-width:534px) {
+    .text55 {
+        padding: 8rem 5rem 2rem 5rem;
+    }
+}
+
+.box36 {
+    height: 16.5rem;
+}
+
+@media screen and (max-width:543px) {
+    .box36 {
+        height: 35rem;
+    }
+}
+
+.text56 {
+    margin: 2rem 4rem 2rem 4rem;
+    padding: 2rem 1rem;
+    color: #999999;
+}
