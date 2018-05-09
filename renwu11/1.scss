@@ -1,0 +1,80 @@
+html{
+   font-size: 62.5%
+}
+body{
+    margin: 0;
+    background:rgb(240, 233, 233);
+}
+$heigh:4rem;
+$font:2rem;
+$color:#fff;
+$back:#68cdd5;
+$pad:2rem;
+@mixin style{
+    background:$back;
+    
+    align-items:center;
+    display: flex;
+    justify-content: space-between;
+}
+header{
+  @include style;
+}
+@mixin flex {
+    font-size: $font;
+    color: $color;
+    
+}
+.color{
+    @include flex;
+    padding-left:1rem;
+}
+.color1{
+    @include flex;
+    padding: 0;
+}
+.color2{
+    @include flex;
+    padding-right: 1rem;
+}
+.pho{
+    height: 3rem;
+    padding:1rem 2rem;
+    border-right: 1px rgb(240, 233, 233) solid;
+}
+form{
+    background: $color;
+    margin-top: $pad;
+    display: flex;
+    align-items:center;
+    height: $heigh;
+}
+header a{
+    text-decoration:none
+}
+input{
+    height: 4rem-0.3rem;
+    border: none;
+    width:  80%;
+    outline:none;
+    padding-left: 1rem;
+}
+footer{
+    @include style;
+    justify-content: center;    
+    margin-top: $pad;
+    @include flex;
+ }
+.text{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+   
+}
+a{
+    font-size: 1.5rem;
+    color: #68cdd5;
+}
+footer a{
+    text-decoration:none;
+}
