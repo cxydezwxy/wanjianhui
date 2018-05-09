@@ -438,11 +438,7 @@ footer {
     width: 100%;
 }
 
-@media screen and (max-width:768px) {
-    footer {
-        height: 22rem;
-    }
-}
+
 
 .style {
     color: #a7a4a4;
