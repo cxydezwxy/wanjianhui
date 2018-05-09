@@ -304,8 +304,8 @@ select {
     padding-right: 14px;
     padding-left: 14px;
     background: url("caidan.png") no-repeat scroll 78px center transparent;
-    height: 3rem;
-    width: 9rem;
+    height: 4rem;
+    width: 10.5rem;
     text-align: center;
 }
 
@@ -473,9 +473,6 @@ footer {
     }
 }
 
-.box2 {
-    height: 12rem;
-}
 
 .address {
     background: #1d7ad9;
