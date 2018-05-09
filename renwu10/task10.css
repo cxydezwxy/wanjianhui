@@ -297,21 +297,23 @@ input[type="radio"]:checked+.father .round2 {
     text-align: center;
 }
 
-select {
-    border: solid 1px #cccccc;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    padding-right: 14px;
-    padding-left: 14px;
-    background: url("caidan.png") no-repeat scroll 78px center transparent;
-    height: 4rem;
-    width: 10.5rem;
-    text-align: center;
-}
-
-select::-ms-expand {
-    display: none;
-}
+select{
+    /*复写Chrome和Firefox里面的边框*/
+    border:1px solid  #cccccc;
+    /*清除默认样式*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+/*在选择框的最右侧中间显示小箭头图片*/
+    background: url("caidan.png") no-repeat scroll 80px center transparent;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 35px;
+  padding-left: 1rem;
+  height: 3rem;
+  width: 11rem;
+ }
+ /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
 
 .pad {
     float: right;
@@ -328,7 +330,7 @@ select::-ms-expand {
 @media screen and (max-width:345px){
     .pad{
         position: absolute;
-        top: 37rem;
+        top: 40rem;
         left: 3rem;
     }
 }
@@ -427,6 +429,9 @@ select::-ms-expand {
         height: 50rem;
        
     }
+}
+ul{
+    margin: 0;
 }
 .background-box2 {
     background: #fbfcff;
