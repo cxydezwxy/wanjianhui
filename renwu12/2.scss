@@ -1,0 +1,129 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    margin: 0;
+}
+
+$b5f:#5fc0cd;
+$bff:#fff;
+$sr:1.5rem;
+$cre:rgb(196, 48, 48);
+$bss:1px silver solid;
+$l: flex-start;
+$c:center;
+$r:flex-end;
+header {
+    background: $b5f;
+    text-align: center;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: $c;
+}
+
+.hjs {
+    height: $sr;
+    margin-left: $sr;
+}
+
+.cff {
+    color: $bff;
+    font-size: $sr;
+}
+
+.img {
+    background-image: url(5.png);
+    background-size: 100% 100%;
+    justify-content: $l;
+    display: flex;
+    align-items: center;
+}
+
+.plan2 {
+    height: 7rem;
+    padding: 2rem;
+}
+@mixin left{
+    padding-left: $sr;
+}
+.img span {
+    @include left;
+    color: $bff;
+    font-size: $sr;
+}
+
+@mixin font {
+    font-size: $sr;
+}
+
+.b5f{
+    margin: 0;
+    margin: $sr;
+    @include font;
+    border-left: 4px $b5f solid;
+}
+.mpb{
+ margin: 0;
+ padding:0.5rem;   
+ border-top: $bss;
+}
+.mpb img{
+    height: $sr;
+    @include left;
+}
+.mpb span{
+    @include font;
+}
+li{
+    padding: 0.5rem;
+    border-top: $bss;
+    @include font;
+    list-style:none ;
+}
+ul{
+    margin: 0;
+}
+@mixin center{
+    margin: $sr;
+    @include left;
+    border-left: $bss;
+}
+.bor{
+    @include center;
+}
+.cred{
+    @extend .bor;
+    color:$cre;
+}
+.abso{
+    @include left;
+    border-left: $bss;
+    margin-left: 1.8rem ;
+    position: absolute;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    display:flex;
+    justify-content: space-between;
+}
+button{
+    height: 3rem;
+    margin: 0 3rem;
+    width:7em;
+    border-radius:5px;
+    border:1px #5fc0cd solid;
+    
+}
+.left{
+    background: $bff;
+    color: $b5f;
+}
+.right{
+    background: $b5f;
+    color: $bff;
+}

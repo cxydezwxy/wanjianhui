@@ -1,0 +1,120 @@
+html{
+    font-size:62.5%;
+}
+body{
+    margin: 0;
+}
+$b5f:#5fc0cd;
+$bgb:silver;
+$sr:1.5rem;
+$cre:red;
+$bss:1px silver solid;
+$l: flex-start;
+$c:center;
+$r:flex-end;
+$h:2rem;
+@mixin flex{
+    display: flex;
+}
+header{
+    background:$b5f; 
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+header img{
+ height:$h;
+ padding:0 $h;
+}
+.op1{
+opacity: 0;}
+header button{
+    margin: 0 -5px;
+}
+.left{
+    background: rgb(40, 168, 177);
+    color: #fff;
+    border-radius: 5px !important;
+}
+.right{
+    background: #fff;
+    color: rgb(40, 168, 177);
+    border-radius: 5px !important;
+}
+.flex{
+    @include flex;
+    justify-content:  space-between ;
+    border-bottom: $bss;  
+    height: 4rem;
+    align-items: center;
+}
+.flex button{
+    width: 100%;
+    border: none;
+    padding: 0.5rem 2rem;
+
+}
+.dropdown-menu{
+   min-width: 100%  !important;
+    text-align: center;
+}
+.dropdown-toggle {
+   
+    color: rgb(155, 147, 147);
+    
+}
+.box img{
+    height: $h;
+    padding-right: 0.5rem;
+}
+.box{
+    padding:0.5rem 2rem;  
+    border-bottom: $bss; 
+}
+.cgb{
+    font-size: $sr;
+    color: $bgb;
+}
+.between{
+    @include flex;
+    justify-content: space-between;
+}
+.cred{
+color:$cre;
+font-size: $sr;
+}
+.cred img{
+    height: $sr;
+}
+.width{
+    width: 33%;
+    border-right: $bss; 
+}
+footer{
+    @extend .between ;
+    padding: 0 20%;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    height: 6rem;
+}
+
+footer img{
+    height: 2rem;
+}
+.h6r{
+    height: 6rem;
+}
+.open{
+    background-color:#fff  !important;
+}
+footer p{
+    color: $bgb;
+}
+.bottom{
+ @extend .box ; 
+ margin-bottom: 6rem;
+}
