@@ -20,7 +20,7 @@ $bss:1px silver solid;
 }
 
 @mixin takea {
-    display: flex;
+    
     align-items: center;
 }
 $h:2rem;
@@ -101,6 +101,7 @@ font-size: $sr;
 footer{
     @extend .between ;
     padding: 0 20%;
+    display: flex;
     @include takea;
     position: fixed;
     bottom: 0;

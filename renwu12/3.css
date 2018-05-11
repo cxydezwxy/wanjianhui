@@ -9,7 +9,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  display: flex;
   align-items: center;
   height: 6rem;
   background: #5fc0cd;
@@ -43,7 +42,6 @@ header button {
 .flex {
   display: flex;
   justify-content: space-between;
-  display: flex;
   align-items: center;
   border-bottom: 1px silver solid;
   height: 4rem;
