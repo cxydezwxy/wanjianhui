@@ -1,0 +1,111 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #29bde0;
+  height: 4rem;
+}
+
+.double {
+  margin-left: 1rem;
+  border-top: 15px double #fff;
+  width: 2.5rem;
+  padding-top: 5px;
+  border-bottom: 5px solid #fff;
+}
+
+main {
+  background: #f1eeee;
+  padding: 2rem;
+}
+
+.big {
+  text-align: center;
+}
+
+.width,
+.btn-group {
+  width: 100%;
+  color: #cecbcb;
+  font-size: 2rem;
+  height: 6rem;
+  border-radius: 0px;
+  margin-bottom: 2rem;
+}
+
+.btn-group img {
+  height: 2rem;
+  float: right;
+}
+
+.back {
+  background: #fff;
+  border: 1px #cecbcb solid;
+}
+
+.text {
+  padding: 2rem;
+  color: #fbb435;
+  font-size: 2rem;
+  border-bottom: 1px #fbb435 solid;
+}
+
+.blue {
+  width: 80%;
+  height: 6rem;
+  background: #29bde0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.btn-group2 {
+  margin-top: 2rem;
+}
+
+.btn-group2 img {
+  position: absolute;
+  top: 34.5rem;
+  right: 2.5rem;
+  height: 3rem;
+}
+
+.cgr {
+  color: #cecbcb;
+  margin: 1rem;
+}
+
+.little {
+  text-align: center;
+  overflow: hidden;
+  letter-spacing: 3rem;
+}
+
+.bbl {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #35bbbb;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 -1rem;
+}
+
+.brg {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #d3cbcb;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 -1rem;
+}
