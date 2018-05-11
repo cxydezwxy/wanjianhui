@@ -11,119 +11,142 @@ $bff:#fff;
 $sr:1.5rem;
 $cre:rgb(196, 48, 48);
 $bss:1px silver solid;
-$l: flex-start;
-$c:center;
-$r:flex-end;
-header {
-    background: $b5f;
-    text-align: center;
-    height: 4rem;
+@mixin takec {
     display: flex;
     justify-content: space-between;
+}
+
+@mixin takel {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin takea {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    @include takec;
+    @include takea;
     align-items: $c;
+    height: 4rem;
+    background: $b5f;
 }
 
 .hjs {
-    height: $sr;
     margin-left: $sr;
+    height: $sr;
 }
 
 .cff {
-    color: $bff;
     font-size: $sr;
+    color: $bff;
 }
 
 .img {
+    @include takel;
+    @include takea;
     background-image: url(5.png);
     background-size: 100% 100%;
-    justify-content: $l;
-    display: flex;
-    align-items: center;
 }
 
 .plan2 {
     height: 7rem;
     padding: 2rem;
 }
-@mixin left{
+
+@mixin choose {
     padding-left: $sr;
 }
+
 .img span {
-    @include left;
+    @include choose;
+    font-size: $sr;
     color: $bff;
+}
+
+@mixin make {
     font-size: $sr;
 }
 
-@mixin font {
-    font-size: $sr;
-}
-
-.b5f{
+.b5f {
     margin: 0;
     margin: $sr;
-    @include font;
     border-left: 4px $b5f solid;
+    @include make;
 }
-.mpb{
- margin: 0;
- padding:0.5rem;   
- border-top: $bss;
-}
-.mpb img{
-    height: $sr;
-    @include left;
-}
-.mpb span{
-    @include font;
-}
-li{
+
+.mpb {
+    margin: 0;
     padding: 0.5rem;
     border-top: $bss;
-    @include font;
-    list-style:none ;
 }
-ul{
+
+.mpb img {
+    height: $sr;
+    @include choose;
+}
+
+.mpb span {
+    @include make;
+}
+
+li {
+    padding: 0.5rem;
+    border-top: $bss;
+    @include make;
+    list-style: none;
+}
+
+ul {
     margin: 0;
 }
-@mixin center{
+
+@mixin center {
     margin: $sr;
-    @include left;
+    @include choose;
     border-left: $bss;
 }
-.bor{
+
+.bor {
     @include center;
 }
-.cred{
+
+.cred {
     @extend .bor;
-    color:$cre;
+    color: $cre;
 }
-.abso{
-    @include left;
+
+.abso {
+    @include choose;
     border-left: $bss;
-    margin-left: 1.8rem ;
+    margin-left: 1.8rem;
     position: absolute;
 }
-footer{
+
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 6rem;
-    display:flex;
-    justify-content: space-between;
+    @include takec;
 }
-button{
+
+button {
     height: 3rem;
     margin: 0 3rem;
-    width:7em;
-    border-radius:5px;
-    border:1px #5fc0cd solid;
-    
+    width: 7em;
+    border-radius: 5px;
+    border: 1px #5fc0cd solid;
 }
-.left{
+
+.left {
     background: $bff;
     color: $b5f;
 }
-.right{
+
+.right {
     background: $b5f;
     color: $bff;
 }

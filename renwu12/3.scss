@@ -9,22 +9,30 @@ $bgb:silver;
 $sr:1.5rem;
 $cre:red;
 $bss:1px silver solid;
-$l: flex-start;
-$c:center;
-$r:flex-end;
-$h:2rem;
-@mixin flex{
+@mixin takec {
     display: flex;
-}
-header{
-    background:$b5f; 
-    @include flex;
     justify-content: space-between;
+}
+
+@mixin takel {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin takea {
+    display: flex;
     align-items: center;
+}
+$h:2rem;
+
+header{
+    @include takec;
+    @include takea;
     height: 6rem;
+    background: $b5f;
 }
 header img{
- height:$h;
+ height: $h;
  padding:0 $h;
 }
 .op1{
@@ -43,11 +51,11 @@ header button{
     border-radius: 5px !important;
 }
 .flex{
-    @include flex;
-    justify-content:  space-between ;
+    @include takec;
+    @include takea;
     border-bottom: $bss;  
     height: 4rem;
-    align-items: center;
+   
 }
 .flex button{
     width: 100%;
@@ -69,7 +77,7 @@ header button{
     padding-right: 0.5rem;
 }
 .box{
-    padding:0.5rem 2rem;  
+    padding: 0.5rem 2rem;  
     border-bottom: $bss; 
 }
 .cgb{
@@ -77,11 +85,10 @@ header button{
     color: $bgb;
 }
 .between{
-    @include flex;
-    justify-content: space-between;
+    @include takec;
 }
 .cred{
-color:$cre;
+color: $cre;
 font-size: $sr;
 }
 .cred img{
@@ -94,7 +101,7 @@ font-size: $sr;
 footer{
     @extend .between ;
     padding: 0 20%;
-    align-items: center;
+    @include takea;
     position: fixed;
     bottom: 0;
     width: 100%;

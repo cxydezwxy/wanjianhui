@@ -7,30 +7,30 @@ body {
 }
 
 header {
-  background: #5fc0cd;
-  text-align: center;
-  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 4rem;
+  text-align: center;
+  background: #5fc0cd;
 }
 
 .hjs {
-  height: 1.5rem;
   margin-left: 1.5rem;
+  height: 1.5rem;
 }
 
 .cff {
-  color: #fff;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   background-image: url(5.png);
   background-size: 100% 100%;
-  justify-content: flex-start;
-  display: flex;
-  align-items: center;
 }
 
 .plan2 {
@@ -40,15 +40,15 @@ header {
 
 .img span {
   padding-left: 1.5rem;
-  color: #fff;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .b5f {
   margin: 0;
   margin: 1.5rem;
-  font-size: 1.5rem;
   border-left: 4px #5fc0cd solid;
+  font-size: 1.5rem;
 }
 
 .mpb {
