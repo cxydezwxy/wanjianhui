@@ -47,7 +47,7 @@ header span {
 }
 .music img {
     height: 3rem;
-    padding-right: 2.5rem;
+    padding-right:0.5rem;
 }
 .music p {
     font-size: 1.5rem;
@@ -116,10 +116,9 @@ width: 100%;
     margin-bottom: 6rem;
 }
 audio{
-    height: 2rem !important;
-    width:8rem;
+    width:5.5rem;
     position: absolute;
-    right: 0rem;
-    top: 9rem;
+    right:0rem;
+    top: 5rem;
     opacity: 0;
 }
