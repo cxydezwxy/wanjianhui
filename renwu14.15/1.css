@@ -1,0 +1,184 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nubre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.nubre img {
+  height: 1.5rem;
+}
+
+.nubre p {
+  margin: 0;
+  color: #29b078;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 5%;
+  background: #29b078;
+  color: #fff;
+  height: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav p {
+    display: none;
+  }
+}
+
+.hig {
+  margin: 0;
+  padding: 1.6rem 0.5rem;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  border-bottom: 5px transparent solid;
+}
+
+.hig:hover {
+  border-bottom: 5px #fff solid;
+}
+
+.collopse {
+  border-top: 15px double #fff;
+  width: 2.5rem;
+  padding-top: 5px;
+  border-bottom: 5px solid #fff;
+}
+
+.big {
+  width: 5rem;
+  float: right;
+  margin-top: -3.5rem;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .big {
+    display: inline;
+  }
+}
+
+.cff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #29b078;
+  border-top: 1px solid #fff;
+  margin: 0;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .cff {
+    display: none;
+  }
+}
+
+.cff p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+input[type="checkbox"]:checked + .cff {
+  display: flex;
+}
+
+input {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  background: #29b078;
+}
+
+@media screen and (max-width: 550px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+  }
+  footer p {
+    margin: 0;
+  }
+}
+
+.we {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.we span {
+  padding-right: 1rem;
+}
+
+.we p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+footer img {
+  width: 7rem;
+}
+
+.take {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.take span {
+  padding-right: 0.5rem;
+  border-right: 2px #fff solid;
+}
+
+.take p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.game {
+  border: none !important;
+}
+
+p {
+  margin: 0;
+}
+
+.text10 {
+  width: 100%;
+  position: relative;
+  top: 0rem;
+  text-align: center;
+  background: #29b078;
+  color: #fff;
+  border-top: 1px #fff solid;
+}
+
+.text11 {
+  text-align: center;
+  color: #fff;
+}

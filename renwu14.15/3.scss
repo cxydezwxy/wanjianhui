@@ -1,0 +1,212 @@
+$gre:#29b078;
+$hig:1.5rem;
+$crg:#9fa3a1;
+$cff:#fff;
+$bor:1px solid #fff;
+@mixin takec {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin takel {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin takea {
+    align-items: center;
+}
+
+@mixin pad {
+    padding: 0 5%;
+}
+
+main {
+    @include pad;
+    background: #fafafa;
+}
+
+.home {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.porf {
+    @extend .home;
+    color: $gre;
+    margin-bottom: 2rem;
+}
+
+.sort {
+    padding: 2rem 0
+}
+
+.direction {
+    color: #9fa3a1;
+}
+
+.all {
+    color: #fff;
+    background-color: $gre;
+}
+
+.open {
+    padding: 0 1rem;
+}
+
+.bsort {
+    padding: 2rem 0;
+    border-top: 1px #cecece solid;
+    width: 100%;
+    border-bottom: 1px #c2c9c5 solid;
+}
+
+.come {
+    padding: 2rem 0;
+    font-size: 2rem;
+    border-bottom: 1px #cecece solid;
+}
+
+.teath {
+    width: 30%;
+    margin-top: 2rem;
+    height: 35rem;
+    position: relative;
+ 
+}
+@media screen and (max-width:990px){
+    .teath{
+        width: 48%;
+    }
+}
+@media screen and (max-width:768px){
+    .teath{
+        width: 100%;
+    }
+}
+.web {
+    height: 33rem;
+    padding-top: 1rem;
+    background: #fff;
+    border: 1px #cecece solid;
+    display: inline-block;
+    width: 100%;
+}
+
+.web img {
+    height: 9.5rem;
+    width: 9.5rem;
+    padding-left: 1rem;
+}
+
+.go {
+    font-size: 1.7rem;
+    position: relative;
+    top: 2rem;
+}
+
+.flash {
+    position: relative;
+    top: 3rem;
+    margin: 0;
+    font-size: 0.7vw;
+}
+
+.qfy {
+    padding-left: 11.5rem;
+    position: relative;
+    top: -11rem;
+    width: 50%;
+    word-wrap: break-word;
+}
+
+table {
+    padding: 1rem;
+    border-collapse: collapse;
+    width: 100.5%;
+    height: 6rem;
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word
+}
+
+table,
+td,
+th {
+    border: 1px solid #cecece;
+}
+
+.sill {
+    padding-left: 1rem;
+}
+
+.atime {
+    padding-left: 1rem;
+}
+
+.door {
+    position: relative;
+    top: -20rem;
+}
+
+.redd,
+.day {
+    color: red;
+}
+
+.mouth {
+    float: right;
+    padding-right: 1rem;
+}
+
+.have {
+    padding: 1rem;
+    border-bottom: 1px solid #cecece;
+}
+
+.pay {
+    text-align: center;
+}
+
+.prompt {
+    font-size: 5px;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mac {
+    word-break: break-all;
+    color: #fff;
+    position: absolute;
+    top: 0rem;
+    width: 70%;
+    height: 26rem;
+    text-align: center;
+    padding: 4rem;
+    background: rgba(49, 48, 48, 0.9);
+    opacity: 0;
+    z-index: 100;
+}
+
+.web:hover .mac {
+    opacity: 1;
+}
+.hard{
+    @include takec;
+
+    flex-wrap:wrap;
+}
+@media screen and (max-width:990px){
+    .hard{
+     display: flex;
+     flex-wrap:wrap;
+    }
+}
+.hard2{
+    @extend .hard ;
+    justify-content: flex-start;
+}
+.hard2 .teath{
+    margin-right: 5%;
+}
