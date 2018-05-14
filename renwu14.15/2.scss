@@ -296,6 +296,11 @@ main{
     width: 50%;
     padding-top: 2rem;
 }
+ @media screen and (max-width:520px){
+     .how{
+         width: 100%;
+     }
+ }
 .text27{
     width: 10rem;
     display: inline-block;
