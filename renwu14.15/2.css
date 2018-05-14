@@ -85,38 +85,29 @@ li {
 }
 
 /*设置当前图片焦点的颜色*/
-.focus-item {
-  background: #51B1D9;
-}
-
 /*设置动画，请根据实际需要修改秒数*/
 .slider-item,
 .focus-item {
   animation-duration: 20s;
 }
 
-.slider-item1,
-.focus-item1 {
+.slider-item1 {
   animation-delay: -1s;
 }
 
-.slider-item2,
-.focus-item2 {
+.slider-item2 {
   animation-delay: 3s;
 }
 
-.slider-item3,
-.focus-item3 {
+.slider-item3 {
   animation-delay: 7s;
 }
 
-.slider-item4,
-.focus-item4 {
+.slider-item4 {
   animation-delay: 11s;
 }
 
-.slider-item5,
-.focus-item5 {
+.slider-item5 {
   animation-delay: 15s;
 }
 

@@ -1,4 +1,5 @@
 /*css reset start*/
+
 $gre:#29b078;
 $hig:1.5rem;
 $crg:#9fa3a1;
@@ -21,7 +22,6 @@ $bor:1px solid #fff;
 @mixin pad {
     padding: 0 5%;
 }
-
 
 * {
     margin: 0;
@@ -114,10 +114,6 @@ li {
 
 /*设置当前图片焦点的颜色*/
 
-.focus-item {
-    background: #51B1D9;
-}
-
 /*设置动画，请根据实际需要修改秒数*/
 
 .slider-item,
@@ -125,28 +121,23 @@ li {
     animation-duration: 20s;
 }
 
-.slider-item1,
-.focus-item1 {
+.slider-item1 {
     animation-delay: -1s;
 }
 
-.slider-item2,
-.focus-item2 {
+.slider-item2 {
     animation-delay: 3s;
 }
 
-.slider-item3,
-.focus-item3 {
+.slider-item3 {
     animation-delay: 7s;
 }
 
-.slider-item4,
-.focus-item4 {
+.slider-item4 {
     animation-delay: 11s;
 }
 
-.slider-item5,
-.focus-item5 {
+.slider-item5 {
     animation-delay: 15s;
 }
 
@@ -201,136 +192,159 @@ li {
 .slider-item {
     padding-bottom: 30%;
 }
-.years{
-   text-align: center;
-   width: 50%;
+
+.years {
+    text-align: center;
+    width: 50%;
 }
-@media screen and (max-width:990px){
-    .years{
-       width: 100%;
-       padding-top: 2rem;
+
+@media screen and (max-width:990px) {
+    .years {
+        width: 100%;
+        padding-top: 2rem;
     }
 }
-.borl{
+
+.borl {
     border-left: 1px dashed rgb(179, 175, 175);
     height: 13vw;
-    padding-top:3rem ;
+    padding-top: 3rem;
 }
-.peoplo{
-    
+
+.peoplo {
     display: flex;
     justify-content: space-between;
-     padding: 2rem 0; 
+    padding: 2rem 0;
 }
-@media screen and (max-width:768px){
-    .peoplo{
-     display: flex;
-     flex-direction: column;
+
+@media screen and (max-width:768px) {
+    .peoplo {
+        display: flex;
+        flex-direction: column;
     }
-    .borl{
+    .borl {
         border: none;
     }
 }
-.dont{
+
+.dont {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-   
 }
-@media screen and (max-width:990px){
-    .dont{
+
+@media screen and (max-width:990px) {
+    .dont {
         padding: 0;
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 }
-.peoplo span{
+
+.peoplo span {
     color: $gre;
 }
-.peoplo p{
+
+.peoplo p {
     color: $crg;
 }
- h1{
-    margin: 2rem 0 ;
+
+h1 {
+    margin: 2rem 0;
 }
-main{
+
+main {
     text-align: center;
     padding: 0 5%;
     background: #fafafa;
 }
-.roff{
+
+.roff {
     width: 6rem;
     height: 6rem;
     line-height: 6rem;
-    font-size:1.8rem;
+    font-size: 1.8rem;
     border-radius: 50%;
-    color: #29b078; 
+    color: #29b078;
     border: 1px rgb(228, 227, 227) solid;
     background-color: #fff;
-        display: inline-block;
+    display: inline-block;
     vertical-align: middle;
 }
-.power{
-   @include takec;
+
+.power {
+    @include takec;
 }
-@media screen and (max-width:1037px){
-    .power{
-        display:flex;
+
+@media screen and (max-width:1037px) {
+    .power {
+        display: flex;
         flex-wrap: wrap;
     }
 }
-.self{
+
+.self {
     @include takec;
     @include takea;
     width: 100%;
 }
-@media screen and (max-width:768px){
-    .self{
-        display:flex;
-        flex-direction:column;
+
+@media screen and (max-width:768px) {
+    .self {
+        display: flex;
+        flex-direction: column;
     }
 }
-.how{
+
+.how {
     width: 50%;
     padding-top: 2rem;
 }
- @media screen and (max-width:520px){
-     .how{
-         width: 100%;
-     }
- }
-.text27{
+
+@media screen and (max-width:520px) {
+    .how {
+        width: 100%;
+    }
+}
+
+.text27 {
     width: 10rem;
     display: inline-block;
     vertical-align: middle;
-    color: #9fa3a1; 
+    color: #9fa3a1;
 }
-.pho9{
+
+.pho9 {
     vertical-align: middle;
 }
-.tem{
+
+.tem {
     padding: 1rem;
     margin: 1rem;
-background-color: $cff;
+    background-color: $cff;
 }
-.ldy{
-    font-size:2rem;
+
+.ldy {
+    font-size: 2rem;
     padding: 1rem 0;
 }
-.jszj{
-    padding: 2rem;
-    color: #9fa3a1; 
 
+.jszj {
+    padding: 2rem;
+    color: #9fa3a1;
 }
-.zlhz img{
+
+.zlhz img {
     height: 13rem;
     margin: 0.5rem;
 }
-.zlhz img:hover{
+
+.zlhz img:hover {
     box-shadow: 0 0 2px 2px #e2e2e2;
 }
+
 .box21 {
     position: absolute;
     content: "";
@@ -358,6 +372,7 @@ ul {
     color: #9fa3a1;
     padding-top: 0;
 }
+
 @media screen and (max-width:999px) {
     .box22 {
         width: 20%;
