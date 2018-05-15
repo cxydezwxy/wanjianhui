@@ -1,0 +1,16 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+ .box{
+    background-color: orange;
+    border: 1px  orange;
+    width: 33%;
+    border-radius: 30px;
+    float: left;
+    padding: 0 0 33% 0;
+    margin: 0.15%;
+}
