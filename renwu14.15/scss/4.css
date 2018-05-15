@@ -31,6 +31,7 @@ main {
   padding: 2rem;
   border: 1px  solid #9fa3a1;
   font-size: 2rem;
+  background: #fff;
 }
 
 .albb {
@@ -40,6 +41,7 @@ main {
   font-size: 1.5rem;
   border: 1px  solid #9fa3a1;
   border-top: none;
+  background: #fff;
 }
 
 .albb ul {
@@ -73,7 +75,6 @@ li:hover .organ {
 }
 
 .backgr {
-  background: #fff;
   width: 28%;
 }
 

@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-a {
+.nav a {
   color: #fff;
   text-decoration: none;
 }
@@ -45,7 +45,7 @@ a {
 
 .hig {
   margin: 0;
-  padding: 1.6rem 0.5rem;
+  padding: 1.45rem 0.5rem;
   margin: 0 0.5rem;
   font-size: 1.5rem;
   border-bottom: 5px transparent solid;
@@ -53,6 +53,25 @@ a {
 
 .hig:hover {
   border-bottom: 5px #fff solid;
+}
+
+.higp {
+  margin: 0;
+  padding: 1.45rem 0.5rem;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  border-bottom: 1px transparent solid;
+}
+
+.higp:hover {
+  border-bottom: 1px #fff solid;
+  width: 100%;
+}
+
+.cff a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
 }
 
 .collopse {

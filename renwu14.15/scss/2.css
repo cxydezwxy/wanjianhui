@@ -136,23 +136,23 @@ li {
 
 /*设置背景，响应式请利用媒体查询根据断点修改路径*/
 .slider-item1 {
-  background-image: url(5.png);
+  background-image: url(../img/5.png);
 }
 
 .slider-item2 {
-  background-image: url(29.png);
+  background-image: url(../img/29.png);
 }
 
 .slider-item3 {
-  background-image: url(30.png);
+  background-image: url(../img/30.png);
 }
 
 .slider-item4 {
-  background-image: url(5.png);
+  background-image: url(../img/5.png);
 }
 
 .slider-item5 {
-  background-image: url(29.png);
+  background-image: url(../img/29.png);
 }
 
 /*设置图片的高度，请根据具体需要修改百分比，响应式及时修改此值*/
@@ -346,5 +346,11 @@ ul {
 @media screen and (max-width: 999px) {
   .box22 {
     width: 20%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .box22 {
+    width: 40%;
   }
 }

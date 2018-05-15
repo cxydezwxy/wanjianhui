@@ -30,6 +30,11 @@ main {
   padding: 0 1rem;
 }
 
+.open:hover {
+  color: #fff;
+  background-color: #29b078;
+}
+
 .bsort {
   padding: 2rem 0;
   border-top: 1px #cecece solid;
@@ -101,7 +106,6 @@ main {
 table {
   padding: 1rem;
   border-collapse: collapse;
-  width: 100.5%;
   height: 6rem;
   table-layout: fixed;
   word-break: break-all;
@@ -112,6 +116,7 @@ table,
 td,
 th {
   border: 1px solid #cecece;
+  width: 100%;
 }
 
 .sill {
@@ -125,6 +130,7 @@ th {
 .door {
   position: relative;
   top: -20rem;
+  width: 100.5%;
 }
 
 .redd,
@@ -158,7 +164,6 @@ th {
   color: #fff;
   position: absolute;
   top: 0rem;
-  width: 70%;
   height: 26rem;
   text-align: center;
   padding: 4rem;
