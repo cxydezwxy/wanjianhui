@@ -1,0 +1,87 @@
+html {
+    font-size: 62.5%;
+    background: #29bde0;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: #29bde0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #fafafa solid;
+}
+
+header img {
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+header div {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.back {
+    margin: 2rem 0;
+    height: 30rem;
+    width: 65%;
+    background: #ffedc5;
+    border: 5px #fff solid;
+    display: flex;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    top: -1.5rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #f56b81;
+    font-size: 2rem;
+}
+.juewang{
+    position: fixed;
+    top: 25rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center; 
+    color: #29bde0;
+    font-size: 2rem;
+}
+footer {
+    text-align: center;
+}
+
+footer button {
+    margin-top: 3rem;
+    ;
+    bottom: 0;
+    width: 70%;
+    height: 4rem;
+    background: orange;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.mint {
+    position: fixed;
+    top: 15rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

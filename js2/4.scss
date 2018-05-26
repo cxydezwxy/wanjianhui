@@ -1,0 +1,112 @@
+html{
+    font-size: 62.5%;
+}
+ body{
+     margin: 0;
+ }
+ $back:#29bde0;
+ $cfb:#fbb435;
+ $cff:#fff;
+ $cgb:rgb(241, 238, 238);
+ $cgr:rgb(206, 203, 203);
+ $bor:1px rgb(206, 203, 203) solid;
+ $fos:2rem;
+ @mixin takec {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin takel {
+    display: flex;
+    justify-content: flex-start;
+}
+@mixin takea {
+    align-items: center;
+}
+ header{
+    @include takec;
+    @include takea;
+    background: $back;
+    height:4rem;
+ }
+ .double{
+     margin-left: 1rem;
+    border-top: 15px double $cff;
+    width: 2.5rem;
+    padding-top: 5px;
+    border-bottom: 5px solid $cff;
+}
+main{
+    background: $cgb;
+    padding:$fos;
+}
+.big{
+    text-align: center;
+}
+.width,
+.btn-group{
+    width: 100% ;
+    color: $cgr;
+    font-size:$fos;   
+    height: 6rem;
+    border-radius: 0px;
+    margin-bottom: $fos;
+}
+.btn-group img{
+    height: $fos;
+    float: right;
+}
+.back{
+    background: $cff;
+    border: $bor;
+}
+.text{
+    padding: $fos;
+    color: $cfb;
+    font-size: $fos;
+    border-bottom: 1px  $cfb solid;
+}
+.blue{
+    width: 80%;
+    height: 6rem;
+    background: $back;
+    color: $cff;
+    font-size: 3rem;
+}
+.btn-group2{
+    margin-top: $fos;
+}
+.btn-group2 img{
+    position: absolute;
+    top: 34.5rem;
+    right: 2.5rem;
+    height: 3rem;
+}
+.cgr{
+    color: $cgr;
+    margin: 1rem;
+}
+.little{
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: 3rem;
+}
+.bbl{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: rgb(53, 187, 187);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 -1rem;
+}
+.brg{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: rgb(211, 203, 203);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 -1rem;
+}

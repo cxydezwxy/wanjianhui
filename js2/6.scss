@@ -1,0 +1,179 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+$back:#29bde0;
+$cfb:#fbb435;
+$cff:#fff;
+$cgb:rgb(241, 238, 238);
+$cgr:rgb(206, 203, 203);
+$bor:1px rgb(206, 203, 203) solid;
+$fos:2rem;
+@mixin takec {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin takel {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin takea {
+    align-items: center;
+}
+
+@mixin cfff {
+    color: #fff;
+}
+
+@mixin crbb {
+    color: $cgr;
+}
+
+@mixin corg {
+    color: $cfb;
+}
+
+@mixin pad {
+    padding: 0 3rem;
+}
+
+body {
+    background: $back;
+}
+
+header {
+    height: 4rem;
+    @include takec;
+    @include takea;
+    padding: 0 1rem;
+    border-bottom: $bor;
+}
+
+header img {
+    height: 2.5rem;
+}
+
+header span {
+    @include cfff;
+    font-size: $fos;
+}
+
+main {
+    text-align: left;
+}
+
+.ship {
+    text-align: center;
+}
+
+.ship img {
+    height: 10rem;
+    margin: 1rem 0;
+}
+
+.ship p {
+    @include cfff;
+    font-size: $fos;
+    margin-top: -4.2rem;
+}
+
+.tires {
+    @include corg;
+    font-size: 1.5rem;
+    @include pad;
+}
+
+.allcolor {
+    @include cfff;
+    font-size: 1.3rem;
+    padding: 0 3rem;
+}
+
+.nur {
+    margin-bottom: 0.5rem;
+}
+
+.cell {
+    @include takec;
+    @include takea;
+}
+
+.cell P {
+    margin: 0;
+}
+
+.doctor {
+    @extend .cell;
+    margin-bottom: 1rem;
+}
+
+.oneday {
+    background-color: $cff;
+    @include pad;
+    border-bottom: $bor;
+}
+
+.time {
+    @include takec;
+    @include takea;
+    padding-top: 0.5rem;
+}
+
+.time p {
+    margin: 0 0 1rem 0 !important;
+}
+
+.day {
+    font-size: 1.5rem !important;
+    color: rgb(56, 55, 55) !important;
+}
+
+.our {
+    @include crbb;
+}
+
+.oneday p {
+    color: rgb(155, 153, 153);
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.mor {
+    padding-bottom: 1rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+      line-height: 5rem;
+      text-align: center;
+    width: 100%;
+    background:rgba(83, 199, 245,0.7);
+}
+button{
+    border: none;
+    height: 3rem;
+    width: 10rem;
+    color: $cff;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.again{
+    background-color: rgb(247, 53, 95);
+ 
+    margin-right: 1rem;
+}
+.help{
+    background: rgb(238, 208, 39);
+    
+}
+.all{
+    margin-bottom: 5rem;
+}

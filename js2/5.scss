@@ -1,0 +1,149 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+$back:#29bde0;
+$cfb:#fbb435;
+$cff:#fff;
+$cgb:rgb(241, 238, 238);
+$cgr:rgb(206, 203, 203);
+$bor:1px rgb(206, 203, 203) solid;
+$fos:2rem;
+@mixin takec {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin takel {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin takea {
+    align-items: center;
+}
+
+body {
+    background: $back;
+}
+
+header {
+    height: 4rem;
+    @include takec;
+    @include takea;
+}
+
+header img {
+    height: $fos;
+    padding: 0 2rem;
+}
+
+header span {
+    font-size: $fos;
+    color: $cff;
+}
+
+.music {
+    @include takec;
+    @include takea;
+    padding: 0 $fos;
+    background-image: url(5.png);
+    height: 5rem;
+}
+
+.music img {
+    height: 3rem;
+    padding-right: 0.5rem;
+}
+
+.music p {
+    font-size: 1.5rem;
+}
+
+.pad {
+    padding-left: 5rem;
+}
+
+.cff {
+    margin-top: 0;
+    @extend .pad;
+    font-size: 1.5rem;
+    color: $cff;
+}
+
+.sm {
+    display: flex;
+    justify-content: space-around;
+    @include takea;
+}
+
+.xl {
+    text-align: center;
+    width: 25%;
+}
+
+.xl p {
+    margin: 0;
+}
+
+.xl img {
+    height: 5vw;
+    opacity: 0;
+    margin-bottom: 1vw;
+}
+
+.hig {
+    height: 17vw;
+    background-color: #f5c97b;
+    line-height: 17vw;
+}
+
+.short {
+    height: 7vw;
+    background-color: #83b09a;
+    line-height: 7vw;
+    color: $cff;
+}
+
+.borff {
+    border: 3px $cff solid;
+    margin-bottom: 1vw;
+}
+
+.xl:hover.xl img {
+    opacity: 1;
+}
+
+footer {
+    line-height: 6rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 6rem;
+    width: 100%;
+    background: $back;
+}
+
+.corg {
+    height: 3rem;
+    width: 60%;
+    background: $cfb;
+    border: none;
+    color: $cff;
+}
+
+.bottom {
+    margin-bottom: 6rem;
+}
+
+audio {
+    width: 5.5rem;
+    position: absolute;
+    right: 0rem;
+    top: 5rem;
+    opacity: 0;
+}

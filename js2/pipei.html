@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玩家匹配</title>
+    <link rel="stylesheet" href="7.css">
+</head>
+
+<body>
+    <header>
+        <img src="Back _ Icon.png">
+        <div>参数设置</div>
+        <img src="14.png">
+    </header>
+    <main>
+        <div class="game">
+            <div class="guy">玩家匹配</div>
+            <div class="police">
+                <div id="peoplo" class="min"></div>
+
+                <div class="set">
+                    <button onclick="temp()">点击设置</button>
+                    <img src="pencil.png">
+                </div>
+            </div>
+        </div>
+        <div class="word">
+            <input type="text" placeholder="水民词组" name="username" />
+            <input type="text" placeholder="幽灵词组" name="username" />
+        </div>
+        <div class="js-2-1section3">
+            <div class="js-2-1section3-div1">
+                <span class="js-2-1section3-div1-span1">玩家人数</span>
+                <input type="text" class="player-num" id="player" value="4" max="18" min="4" onblur="on_change()">
+                <!--onblur是当对象失去焦点的时候执行的函数-->
+                <span class="js-2-1section3-div1-span1">人</span>
+            </div>
+            <!--上面这部分是玩家人数方框的html-->
+            <div class="js-2-1section3-div2">
+                <button class="btn-sub" id="btnSub" onclick="less()"></button>
+                <!--减value的按钮-->
+                <input type="range" class="slider-block" id="slider" max="18" min="4" step="1" value="4" onchange="moveChange()">
+                <!--onchange是当对象发生变化时执行的函数-->
+                <button class="btn-add" id="btnAdd" onclick="plus()"></button>
+                <!--加value的按钮-->
+            </div>
+        </div>
+        <footer>
+            <a href="fanpai.html">
+                <button onclick="kass()" id="nomo">去发牌</button>
+            </a>
+        </footer>
+    </main>
+
+    <script src="1.js"></script>
+</body>
+
+</html>

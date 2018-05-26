@@ -66,7 +66,7 @@ function f1() {
     console.log(blue);
     console.log(c);
 }
-
+ 
 function number() {
     for (var i = 0; i < array.length; i++) {
         change[i].style.background="";
@@ -81,7 +81,7 @@ function number() {
     var cla = document.getElementsByClassName("box1")[blue];
     var z = document.getElementsByClassName("box1")[c];
     for (var i = 0; i < array.length; i++ ){
-        tank[i] = Math.floor(Math.random() * 256);
+       tank[i] = Math.floor(Math.random() * 256);
     }
     // var r = Math.floor(Math.random() * 256);
     // var g = Math.floor(Math.random() * 256);
