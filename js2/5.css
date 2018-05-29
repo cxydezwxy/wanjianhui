@@ -90,8 +90,8 @@ header span {
 }
 
 .borff {
-  border: 3px #fff solid;
-  margin-bottom: 1vw;
+    border: 3px #fff solid;
+    margin-bottom: 1vw;
 }
 
 .xl:hover.xl img {

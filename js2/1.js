@@ -16,7 +16,6 @@ var num;
 function moveChange() { // 滑块的值改变，运行这个函数
     oPlayerNum.value = osliderBlock.value;
     //滑块的值改变的话，滑块的值赋值给方框，实现动态变化
-
 }
 
 function less() {
@@ -45,12 +44,10 @@ function plus() {
     // console.log(oPlayerNum.value);
 }
 
+
 var _array;
-var lin;
 function temp() {
     document.getElementById("peoplo").innerHTML = " ";
-    console.log(oPlayerNum.value)
-
     var kill = Math.floor(oPlayerNum.value / 3);
     console.log(kill);
     var peoplo = Math.floor(oPlayerNum.value - kill);
@@ -76,12 +73,20 @@ function temp() {
         _array[i] = _array[j];
         _array[j] = temp;
     }
-    console.log(arr)
+    console.log(arr);
     console.log(arr2);
     for (var i = 0; i < tomo; i++) {
         var divA = document.getElementById("peoplo");
         divA.innerHTML = divA.innerHTML + _array[i];
     }
     sessionStorage.setItem('key', JSON.stringify(_array));
-    k = _array;
+    console.log(_array.length);
+    console.log(oPlayerNum.value);
+}
+function kass(){
+ 
+    window.location.href = "fanpai.html";
+
+    console.log(_array.length);
+    console.log(oPlayerNum.value);
 }

@@ -1,0 +1,214 @@
+html {
+    font-size: 62.5%;
+    background: #f0efef;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: #29bde0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #fafafa solid;
+}
+
+header img {
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+header div {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    width: 100%;
+    background: rgba(83, 199, 245, 0.7);
+}
+
+button {
+    border: none;
+    height: 3rem;
+    width: 10rem;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.again {
+    background-color: orange;
+    margin-right: 1rem;
+}
+
+.help {
+    background: orange;
+}
+
+.all {
+    margin-bottom: 5rem;
+}
+
+main {
+    text-align: center;
+    margin: 5px 2%;
+}
+
+.firstday {
+    height: 3rem;
+    color: #29bde0;
+    background-color: #fff;
+    line-height: 3rem;
+    border: 1px #c0bfbf solid;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.take {
+    margin-top: 10px;
+    width: 100%;
+    background: #fff;
+    border: 1px #c0bfbf solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid #29bde0;
+    position: absolute;
+    top: 0.6rem;
+    left: -1.5rem;
+}
+.left1 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid #29bde0;
+    position: absolute;
+    top: 0.6rem;
+    left: -1.5rem;
+}
+.left2 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid #29bde0;
+    position: absolute;
+    top: 0.6rem;
+    left: -1.5rem;
+}
+.left3 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid #29bde0;
+    position: absolute;
+    top: 0.6rem;
+    left: -1.5rem;
+}
+.fren {
+    width: 80%;
+    background-color: #29bde0;
+    height: 3rem;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+.fren1 {
+    width: 80%;
+    background-color: #29bde0;
+    height: 3rem;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+.fren2 {
+    width: 80%;
+    background-color: #29bde0;
+    height: 3rem;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+.fren3 {
+    width: 80%;
+    background-color: #29bde0;
+    height: 3rem;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+.nao {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    padding-left: 15%;
+    margin-left: 15%;
+    border-left: 1px  #c0bfbf solid;
+    position: relative;
+}
+.tu{
+    height: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: -1.5rem;
+    background:#fff;
+}
+.sun{
+    
+    height: 3rem;
+    position: absolute;
+    top: 4.5rem;
+    left: -1.5rem;
+    background:#fff;
+}
+.die{
+    width: 80%;
+    background-color: gray;
+    height: 3rem;
+    margin: 0.5rem 0;
+    line-height: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+    
+}
+.ded{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid gray;
+    position: absolute;
+    top: 0.6rem;
+    left: -1.5rem;
+}

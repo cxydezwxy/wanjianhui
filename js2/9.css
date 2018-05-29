@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%;
+    background: #29bde0;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: #29bde0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #fafafa solid;
+}
+
+header img {
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+header div {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.natin {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.round {
+    width: 21%;
+    margin: 5%;
+    border: 3px #fff solid;
+}
+
+.killnum {
+    height: 15vw;
+    background-color: #f5c97b;
+    line-height: 15vw;
+}
+
+p {
+    margin: 0;
+}
+
+.gry {
+    height: 5vw;
+    background-color: #83b09a;
+    line-height: 5vw;
+    color: #fff;
+}
+
+footer {
+    line-height: 6rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 6rem;
+    width: 100%;
+    background: #29bde0;
+}
+
+.corg {
+    height: 3rem;
+    width: 60%;
+    background: #fbb435;
+    border: none;
+    color: #fff;
+}
+
+
+main{
+    margin-bottom: 6rem;
+}
