@@ -35,7 +35,7 @@ main {
     height: 30rem;
     width: 65%;
     background: #ffedc5;
-    border: 5px #fff solid;
+    border: 3px #fff solid;
     display: flex;
     justify-content: center;
 }
@@ -51,6 +51,7 @@ main {
     background: #ffffff;
     color: #f56b81;
     font-size: 2rem;
+    border: 3px #ffedc5 solid;
 }
 .juewang{
     position: fixed;

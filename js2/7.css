@@ -22,12 +22,14 @@ header div {
     font-size: 1.5rem;
     color: #fff;
 }
-a{
-    text-decoration:none;
+
+a {
+    text-decoration: none;
 }
+
 main {
     background: #f1eeee;
-    padding: 3%;
+    padding: 8px;
 }
 
 .game {
@@ -37,7 +39,7 @@ main {
 }
 
 .guy {
-    height: 80vw;
+    height: 20rem;
     width: 10%;
     font-size: 2rem;
     padding: 0 5%;
@@ -52,11 +54,11 @@ main {
 }
 
 .min {
-    height: 68vw;
+    height: 17rem;
     overflow-y: auto;
     color: gray;
-  display: flex;
-  flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .set {
@@ -71,13 +73,12 @@ main {
     border-top: 1px #f1eeee solid;
     height: 3rem;
 }
-.juewang{
-    width: 31%   ;
+
+.juewang {
+    width: 31%;
     text-align: center;
     line-height: 8rem;
-
 }
-
 
 .set img {
     padding-left: 1rem;
@@ -90,9 +91,9 @@ main {
 
 .word {
     background: #fff;
-    margin: 2% 0 0 0;
+    margin: 8px 0 0 0;
     width: 100%;
-    height: 30vw;
+    height: 8rem;
 }
 
 .set button {
@@ -104,44 +105,41 @@ main {
 
 .word input {
     border: none;
-    padding: 4% 0;
-    margin: 0 4%;
+    padding: 1rem 0;
+    margin: 0 8px;
     width: 92%;
     border-bottom: 1px #f1eeee solid;
     outline: none;
 }
-.killnum{
+
+.killnum {
     width: 50%;
     text-align: center;
     position: relative;
     height: 5rem;
 }
-.tianpin {
 
+.tianpin {
     position: absolute;
-    top: 4rem;
+    top: 3.8rem;
     left: 2rem;
     background: #29bde0;
-    height: 5px;
-    width: 5px;
-
+    height: 8px;
+    width: 8px;
 }
+
 .tianping {
-
-     position: absolute;
-     top: 4rem;
-  left: 2rem;
-    background:orange;
-    height: 5px;
-    width: 5px;
-
+    position: absolute;
+    top: 3.8rem;
+    left: 2rem;
+    background: orange;
+    height: 8px;
+    width: 8px;
 }
-
-
 
 .js-2-1section3 {
     background: #fff;
-    margin-top: 2%;
+    margin-top: 8px;
 }
 
 .js-2-1section3-div1 {
@@ -230,13 +228,15 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 footer {
-    background: orange;
     text-align: center;
 }
 
-footer p {
+footer button {
+    width: 100%;
+    border: none;
+    background-color: orange;
     font-size: 1.5rem;
-    margin: 3%;
+    margin-top: 8px;
     color: #fff;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
 }
