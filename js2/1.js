@@ -44,8 +44,9 @@ function plus() {
     // console.log(oPlayerNum.value);
 }
 
-
+var have = [];
 var _array;
+
 function temp() {
     document.getElementById("peoplo").innerHTML = " ";
     var kill = Math.floor(oPlayerNum.value / 3);
@@ -59,11 +60,13 @@ function temp() {
     for (i = 0; i < kill; i++) {
         arr[i] = "<div class=killnum><span class=tianping></span><span class=juewang>杀手</span></div>";
         console.log(arr[i]);
+        have.push(arr[i]);
     }
     var arr2 = [];
     for (i = 0; i < peoplo; i++) {
         arr2[i] = "<div class=killnum><span class=tianpin></span><span class=juewang>平民</span></div>";
         console.log(arr2[i]);
+        have.push(arr2[i]);
     }
     var gamenum = arr.concat(arr2);
     _array = gamenum.concat();
@@ -80,13 +83,13 @@ function temp() {
         divA.innerHTML = divA.innerHTML + _array[i];
     }
     sessionStorage.setItem('key', JSON.stringify(_array));
-    console.log(_array.length);
+    console.log(have);
     console.log(oPlayerNum.value);
 }
-function kass(){
- 
-    window.location.href = "fanpai.html";
-
-    console.log(_array.length);
-    console.log(oPlayerNum.value);
+function kass() {
+    if (have.length == oPlayerNum.value) {
+        window.location.href = "fanpai.html";
+    } else {
+        alert("请设置玩家匹配")
+    }
 }

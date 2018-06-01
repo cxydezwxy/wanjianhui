@@ -57,3 +57,6 @@ $(".fren3").click(function () {
     $fsm.work4();
     alert("请全民投票")
 });
+   
+// document.getElementById("demo").innerHTML = 
+// person.firstName+ "现在" + person.age + "岁";

@@ -17,16 +17,17 @@ $(document).ready(function () {
     //     });
     // });
     $(".round").click(function () {
-        for (i = 0; i < data1.length; i++) {
-            console.log(i)  
-            $(".backl").css({"background-color": "#f5c97b"});
-        }
+        $(".killnum").eq(q).css({
+            "background-color": "#f5c97b"
+        });
         $(".niff").hide();
         q = $(".round").index($(this));
         console.log(this);
         console.log(q);
         $(".niff").eq(q).show();
-        $(".killnum").eq(q).addClass("backl");
-        console.log(data1.length);    
+        $(".killnum").eq(q).css({
+            "background-color": "#83b09a"
+        });
+        console.log(data1.length);
     });
 });
