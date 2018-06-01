@@ -1,3 +1,4 @@
+
 var $fsm = new StateMachine({
     init: '0',
     transitions: [{
