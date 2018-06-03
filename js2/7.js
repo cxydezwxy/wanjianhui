@@ -64,22 +64,23 @@ $(document).ready(function () {
             $(".killnum").eq(qwe.ne - 1).addClass("backll")
         }
     }
+    need[qwe.ne-1] = {
+        status: "die",
+        Identity: peoplo[qwe.ne-1],
+        ne: qwe.ne,
+    }   
     var asd = JSON.parse(sessionStorage.getItem('xing'));
     for (i = 0; i < need.length; i++) {
         if (asd.status == "die") {
             $(".killnum").eq(asd.ne - 1).addClass("backll")
         }
         
-    }
-    need[qwe.ne-1] = {
-        status: "die",
-        Identity: peoplo[qwe.ne-1],
-        ne: qwe.ne,
-    }
-    need[asd.ne-1] = {
+    }   need[asd.ne-1] = {
         status: "die",
         Identity: peoplo[asd.ne-1],
         ne: asd.ne,
     }
+
+ 
 });
 console.log(need)
