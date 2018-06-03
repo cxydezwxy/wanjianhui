@@ -23,7 +23,6 @@ for (i = 0; i < data1.length; i++) {
     need.push(gamer[i]);
 }
 console.log(need);
-
 $(document).ready(function () {
     for (i = 0; i < data1.length; i++) {
         t++;
@@ -31,30 +30,24 @@ $(document).ready(function () {
     }
     $(".corg").click(function () {
         console.log(q);
-        if (need[q].Identity == "杀手") {
-            alert("请杀平民");
-        } else if (need[q].status == "die") {
+        if (need[q].status == "die") {
             alert("请杀活人")
-        } else {
+        } 
+        else {
             need[q] = {
                 status: "die",
                 Identity: peoplo[q],
                 ne: q + 1,
             }
-            sessionStorage.setItem('ing', JSON.stringify(need[q]));
             window.location.href = "taiben.html";
         }
-        console.log(need[q])
-
+        sessionStorage.setItem('xing', JSON.stringify(need[q]));
         if (need[q].status == "die") {
             $(".killnum").eq(q).addClass("backll")
         }
         console.log(need[q])
     })
-    console.log(need)
-
     $(".round").click(function () {
-
         for (i = 0; i < need.length; i++) {
             $(".killnum").removeClass("backl");
         }
@@ -66,14 +59,27 @@ $(document).ready(function () {
         console.log(data1.length);
     });
     var qwe = JSON.parse(sessionStorage.getItem('ing'));
-    if (qwe.status == "die") {
-        $(".killnum").eq(qwe.ne - 1).addClass("backll")
+    for (i = 0; i < need.length; i++) {
+        if (qwe.status == "die") {
+            $(".killnum").eq(qwe.ne - 1).addClass("backll")
+        }
+    }
+    var asd = JSON.parse(sessionStorage.getItem('xing'));
+    for (i = 0; i < need.length; i++) {
+        if (asd.status == "die") {
+            $(".killnum").eq(asd.ne - 1).addClass("backll")
+        }
+        
     }
     need[qwe.ne-1] = {
         status: "die",
         Identity: peoplo[qwe.ne-1],
         ne: qwe.ne,
     }
-   console.log(need[qwe.ne]);
-
+    need[asd.ne-1] = {
+        status: "die",
+        Identity: peoplo[asd.ne-1],
+        ne: asd.ne,
+    }
 });
+console.log(need)

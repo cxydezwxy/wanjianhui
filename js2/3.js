@@ -30,4 +30,8 @@ $(document).ready(function () {
         });
         console.log(data1.length);
     });
+    var qwe = JSON.parse(sessionStorage.getItem('ing'));
+    if (qwe.status== "die") {
+        $(".killnum").eq(qwe.ne-1).addClass("backll")
+    }
 });
