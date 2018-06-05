@@ -70,6 +70,17 @@ main {
     border: 1px #c0bfbf solid;
     font-size: 1.5rem;
     width: 100%;
+    margin: 1rem 0;
+}
+.firstday1 {
+    height: 3rem;
+    color: #29bde0;
+    background-color: #fff;
+    line-height: 3rem;
+    border: 1px #c0bfbf solid;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 1rem 0;
 }
 
 .take {

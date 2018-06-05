@@ -34,4 +34,11 @@ $(document).ready(function () {
     if (qwe.status== "die") {
         $(".killnum").eq(qwe.ne-1).addClass("backll")
     }
+    var asd = JSON.parse(sessionStorage.getItem('xing'));
+   
+        if (asd.status == "die") {
+            $(".killnum").eq(asd.ne - 1).addClass("backll")
+        }
+
+    
 });

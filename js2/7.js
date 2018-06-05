@@ -32,14 +32,13 @@ $(document).ready(function () {
         console.log(q);
         if (need[q].status == "die") {
             alert("请杀活人")
-        } 
-        else {
+        } else {
             need[q] = {
                 status: "die",
                 Identity: peoplo[q],
                 ne: q + 1,
             }
-            window.location.href = "taiben.html";
+            window.location.href = "taiben.html";   
         }
         sessionStorage.setItem('xing', JSON.stringify(need[q]));
         if (need[q].status == "die") {
@@ -64,23 +63,22 @@ $(document).ready(function () {
             $(".killnum").eq(qwe.ne - 1).addClass("backll")
         }
     }
-    need[qwe.ne-1] = {
+    need[qwe.ne - 1] = {
         status: "die",
-        Identity: peoplo[qwe.ne-1],
+        Identity: peoplo[qwe.ne - 1],
         ne: qwe.ne,
-    }   
+    }
     var asd = JSON.parse(sessionStorage.getItem('xing'));
     for (i = 0; i < need.length; i++) {
         if (asd.status == "die") {
             $(".killnum").eq(asd.ne - 1).addClass("backll")
         }
-        
-    }   need[asd.ne-1] = {
+
+    }
+    need[asd.ne - 1] = {
         status: "die",
-        Identity: peoplo[asd.ne-1],
+        Identity: peoplo[asd.ne - 1],
         ne: asd.ne,
     }
-
- 
 });
 console.log(need)
