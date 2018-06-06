@@ -31,14 +31,11 @@ $(document).ready(function () {
         console.log(data1.length);
     });
     var qwe = JSON.parse(sessionStorage.getItem('ing'));
-    if (qwe.status== "die") {
-        $(".killnum").eq(qwe.ne-1).addClass("backll")
+    if (qwe.status == "die") {
+        $(".killnum").eq(qwe.ne - 1).addClass("backll")
     }
     var asd = JSON.parse(sessionStorage.getItem('xing'));
-   
-        if (asd.status == "die") {
-            $(".killnum").eq(asd.ne - 1).addClass("backll")
-        }
-
-    
+    if (asd.status == "die") {
+        $(".killnum").eq(asd.ne - 1).addClass("backll")
+    }   
 });
