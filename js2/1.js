@@ -48,6 +48,7 @@ var have = [];
 var _array;
 
 function temp() {
+    have = [];
     document.getElementById("peoplo").innerHTML = " ";
     var kill = Math.floor(oPlayerNum.value / 3);
     console.log(kill);
@@ -59,15 +60,18 @@ function temp() {
     var arr = [];
     for (i = 0; i < kill; i++) {
         arr[i] = "<div class=killnum><span class=tianping></span><span class=juewang>杀手</span></div>";
-        console.log(arr[i]);
-        have.push(arr[i]);
+
+        have.push(arr)
     }
+    console.log(arr);    
     var arr2 = [];
     for (i = 0; i < peoplo; i++) {
         arr2[i] = "<div class=killnum><span class=tianpin></span><span class=juewang>平民</span></div>";
-        console.log(arr2[i]);
-        have.push(arr2[i]);
+        have.push(arr2)
+
     }
+    console.log(have);
+    
     var gamenum = arr.concat(arr2);
     _array = gamenum.concat();
     for (var i = gamenum.length; i--;) {
@@ -76,14 +80,12 @@ function temp() {
         _array[i] = _array[j];
         _array[j] = temp;
     }
-    console.log(arr);
     console.log(arr2);
     for (var i = 0; i < tomo; i++) {
         var divA = document.getElementById("peoplo");
         divA.innerHTML = divA.innerHTML + _array[i];
     }
     sessionStorage.setItem('key', JSON.stringify(_array));
-    console.log(have);
     console.log(oPlayerNum.value);
 }
 function kass() {
@@ -92,4 +94,8 @@ function kass() {
     } else {
         alert("请设置玩家匹配")
     }
+     console.log(have)
 }
+
+sessionStorage.removeItem('key1');
+sessionStorage.removeItem('key2');
