@@ -1,6 +1,7 @@
 var day = JSON.parse(sessionStorage.getItem('day'));
+var ded = JSON.parse(sessionStorage.getItem('ded'));
+var peoplo = JSON.parse(sessionStorage.getItem('allhu'));
 console.log(day);
-sessionStorage.setItem('dayi', JSON.stringify(day));
 // 有限状态机
 var $fsm = new StateMachine({
     init: '0',
@@ -29,7 +30,6 @@ var $fsm = new StateMachine({
         onWork1: function () {
             $(".fren").eq(day - 1).addClass("die");
             $(".left").eq(day - 1).addClass("ded");
-
         },
         onWork2: function () {
             $(".fren1").eq(day - 1).addClass("die");
@@ -52,7 +52,6 @@ for (var w = 0; w < day; w++) {
         $(".wrap").first().clone().prependTo($("main")); //设置当天数大于1时用clone复制.warp到html到main中去
     }
 }
-
 //设置步骤循环完了之后数据保存颜色的改变。
 for (var y = 0; y < (day - 1); y++) {
     $(".fren").eq(y).addClass("die");
@@ -65,10 +64,9 @@ for (var y = 0; y < (day - 1); y++) {
     $(".left3").eq(y).addClass("ded");
     $(".take").eq(y).hide(); //设置完成一天的循环时隐藏四个状态的点击kuai
 }
-
 // 改变天数显示的值
 for (var p = 0; p <= day; p++) {
-    $(".firstday").eq(p).html("第" + (p + 1) + "天");//这里是变换天数的值，q+1是因为for循环的时候p的值为0
+    $(".firstday").eq(p).html("第" + (p + 1) + "天"); //这里是变换天数的值，q+1是因为for循环的时候p的值为0
 }
 // 当天的显示
 $(".take").eq(day - 1).show();
@@ -86,14 +84,14 @@ $(".fren").eq(day - 1).click(function () { //eq（0）表示选中的 第一天�
     sessionStorage.setItem('v', JSON.stringify("2"));
     sessionStorage.setItem('s', JSON.stringify("1"));
     console.log($(".fren").eq(1));
+    sessionStorage.removeItem('a');
+    sessionStorage.removeItem('fore');
     window.location.href = "sharen.html"; //点击跳转
     //这里是通过判断wote==1来显示死亡的过程
 });
 // $(function () {
 //     $(".fren").eq(y).after("<p>" + ese.ne + "号" + "被杀手杀死,真实身份是" + ese.Identity + "</p>");
 // })
-
-
 $(".fren1").eq(day - 1).click(function () { //第二个状态的运行
     $fsm.work2();
     sessionStorage.setItem('z', JSON.stringify("2")); //设置第一个状态点击后为2
@@ -110,7 +108,8 @@ $(".fren3").eq(day - 1).click(function () {
     // sessionStorage.removeItem('z');
     sessionStorage.setItem('z', JSON.stringify("4")); //设置第一个状态点击后为4
     sessionStorage.setItem('a', JSON.stringify("pros")); //这里是点击第四个按钮保存pros，然后可以判断是通过投票杀死的
-    //这里是通过判断phat == 4来显示死亡的过程
+    //这里是通过判断phat == 4来显示死亡的过程\
+    sessionStorage.removeItem('f');
     window.location.href = "sharen.html";
 });
 // $(function () {
@@ -130,20 +129,23 @@ if (phat == 1) {
     $fsm.work2();
     $fsm.work3();
 }
-
 console.log(day);
-
-
-
 var ese = JSON.parse(sessionStorage.getItem('ing'));
 console.log($fsm.state)
 var asd = JSON.parse(sessionStorage.getItem('zing'));
 var wote = JSON.parse(sessionStorage.getItem('s'));
-
-
+//输入死亡人的死亡方式和身份
+for (i = 0; i < ded.length; i++) {
+    if (i % 2 == 0) {
+        $(".fren").eq(day-1).after(ded[i]+1  + "号被杀手杀死，" + "他的身份是" +peoplo[ded[i]]);
+    }else{
+        $(".fren3").eq(day-1).after(ded[i]+1 + "号被投票投死，" + "他的身份是" +peoplo[ded[i]]);
+    }
+}
 // sessionStorage.removeItem('z');
 $(".again").click(function () {
     sessionStorage.removeItem('ing');
+    sessionStorage.removeItem('allhu');
     sessionStorage.removeItem('dayi');
     sessionStorage.removeItem('hu');
     sessionStorage.removeItem('ki');

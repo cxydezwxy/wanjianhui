@@ -96,6 +96,5 @@ function kass() {
     }
      console.log(have)
 }
-
 sessionStorage.removeItem('key1');
 sessionStorage.removeItem('key2');

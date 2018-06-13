@@ -3,6 +3,7 @@ var data2 = JSON.parse(sessionStorage.getItem('f'));
 var data3 = JSON.parse(sessionStorage.getItem('a'));
 var data4 = JSON.parse(sessionStorage.getItem('ning'));
 var alivepe = JSON.parse(sessionStorage.getItem('huing'));
+var fore =JSON.parse(sessionStorage.getItem('fore'));
 console.log(data2);
 var peoplo = [];
 var t = 0;
@@ -10,9 +11,18 @@ var q;
 var ki = [];
 var alive = [];
 var ever = [];
-var day = 1;
 var hu = [];
-var need = [];
+if(fore==0){
+    document.getElementById('topc').innerHTML="全民投票";
+    document.getElementsByClassName('ship')[0].innerHTML="发言讨论结束，大家请投票"
+    document.getElementsByClassName('head')[0].innerHTML="点击投票数最多人的头像"
+}
+if (data4 == undefined) {
+    var need = [];
+} else {
+    var need = JSON.parse(sessionStorage.getItem('ning'));
+}
+
 // if (time == undefined) {
 //     
 // } else {
@@ -20,6 +30,7 @@ var need = [];
 //     console.log(hu)
 //     sessionStorage.setItem('hu', JSON.stringify(hu));
 // }
+//保存死亡人的序号
 var time = JSON.parse(sessionStorage.getItem('ded'));
 if (time == undefined) {
     var ded = [];
@@ -28,16 +39,6 @@ if (time == undefined) {
     console.log(ded)
     sessionStorage.setItem('ded', JSON.stringify(ded));
 }
-for (i = 0; i < data1.length; i++) {
-    var gamer = [];
-    gamer[i] = {
-        status: "alive", //设置状态为alive
-        Identity: peoplo[i], //设置玩家身份
-        ne: i //设置玩家编号
-    }
-    console.log(gamer[i]);
-    need.push(gamer[i]);
-} //设置玩家的状态以及，玩家的身份和编号。
 for (i = 0; i < data1.length; i++) {
     if (data1[i] === "<div class=killnum><span class=tianpin></span><span class=juewang>平民</span></div>") {
         peoplo.push("平民") //将平民的数组推到 peoplp数组里面
@@ -49,10 +50,23 @@ for (i = 0; i < data1.length; i++) {
         ever.push(i)
     }
 }
+if (data4 == undefined) {
+    for (i = 0; i < data1.length; i++) {
+        var gamer = [];
+        gamer[i] = {
+            status: "alive", //设置状态为alive
+            Identity: peoplo[i], //设置玩家身份
+            ne: i //设置玩家编号
+        }
+        console.log(gamer[i]);
+        need.push(gamer[i]);
+    } //设置玩家的状态以及，玩家的身份和编号。
+}
 console.log(ever);
 console.log(ki);
 console.log(hu);
 console.log(peoplo);
+sessionStorage.setItem('allhu', JSON.stringify(peoplo));
 $(document).ready(function () {
     for (i = 0; i < data1.length; i++) {
         t++;
@@ -82,7 +96,7 @@ $(document).ready(function () {
             //将死亡人的序号从其对应的数组里删除
             for (i = 0; i < ki.length; i++) {
                 if (ki[i] == q) {
-                    ki.splice(q - 0, 1);
+                    ki.splice(q - i, 1);
                 }
             }
             for (i = 0; i < hu.length; i++) {
@@ -102,24 +116,23 @@ $(document).ready(function () {
             } else if (data3 == "pros") {
                 sessionStorage.setItem('zing', JSON.stringify(need[q])); //这里是将被投票投死的人的数据保存到zing
             }
-            var day = JSON.parse(sessionStorage.getItem('dayi'));
-            console.log(day)
+
+
             console.log(ded)
             console.log(need)
-
-            for (i = 0; i < need.length; i++) {
-                console.log(ded[i])
-                if (need[i].ne == ded[i]) {
-                    need[i] = {
-                        status: "die",
-                        Identity: peoplo[i],    
-                        ne: i,
-                    }
-                }
-                console.log(need[i].status);
-                console.log(need)
-                console.log(ded[i]);
-            }
+            // for (i = 0; i < need.length; i++) {
+            //     console.log(ded[i])
+            //     if (need[i].ne == ded[i]) {
+            //         need[i] = {
+            //             status: "die",
+            //             Identity: peoplo[i],    
+            //             ne: i,
+            //         }
+            //     }
+            //     console.log(need[i].status);
+            //     console.log(need)
+            //     console.log(ded[i]);
+            // }
             sessionStorage.setItem('ning', JSON.stringify(need));
             console.log(need)
             // for (var i = 0; i < ever.length; i++) {
@@ -131,7 +144,13 @@ $(document).ready(function () {
             //         console.log(arry3)
             //     }
             // }
-            if (data3 == "pros") {
+            //天数的循环
+            var day = JSON.parse(sessionStorage.getItem('day'));
+            if (data2 == "pros1") {
+                if (day == undefined) {
+                    var day = 1
+                }
+            } else if (data3 == "pros") {
                 if (day == undefined) {
                     var day = 1
                 } else {
@@ -147,7 +166,7 @@ $(document).ready(function () {
             $(".killnum").eq(q).addClass("backll")
         } //这里判断玩家状态为die 时改变背景颜色为灰色
         console.log(need[q])
-        sessionStorage.removeItem('f');
+
     })
     console.log(need)
     $(".round").click(function () {
@@ -166,6 +185,7 @@ $(document).ready(function () {
             $(".killnum").eq(data4[i].ne).addClass("backll") //将死人对应的格子颜色改变成灰色
         }
     }
+
     console.log(data4)
     // var qwe = JSON.parse(sessionStorage.getItem('ing')); //这里将被杀手杀死的人的数据提取出来赋值给qwe
     // // $(".killnum").eq(qwe.ne - 1).addClass("backll")//
