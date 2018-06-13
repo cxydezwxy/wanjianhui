@@ -90,7 +90,10 @@ main {
   padding-top: 0.5rem;
 }
 
-.time p {
+.mor1 {
+  margin: 0 0 1rem 0 !important;
+}
+.mor2{
   margin: 0 0 1rem 0 !important;
 }
 

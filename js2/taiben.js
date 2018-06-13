@@ -3,6 +3,28 @@ var ded = JSON.parse(sessionStorage.getItem('ded'));
 var peoplo = JSON.parse(sessionStorage.getItem('allhu'));
 console.log(day);
 // 有限状态机
+$(".end").click(function(){
+    sessionStorage.removeItem('fun');
+    sessionStorage.removeItem('ing');
+    sessionStorage.removeItem('allhu');
+    sessionStorage.removeItem('dayi');
+    sessionStorage.removeItem('hu');
+    sessionStorage.removeItem('ki');
+    sessionStorage.removeItem('a');
+    sessionStorage.removeItem('fore');
+    sessionStorage.removeItem('key');
+    sessionStorage.removeItem('zing');
+    sessionStorage.removeItem('z');
+    sessionStorage.removeItem('key');
+    sessionStorage.removeItem('need');
+    sessionStorage.removeItem('day');
+    sessionStorage.removeItem('f');
+    sessionStorage.removeItem('s');
+    sessionStorage.removeItem('ded');
+    sessionStorage.removeItem('ning');
+    sessionStorage.removeItem('v'); //这里的removeItem是清除保存的数据。
+    window.location.href = "yemian.html";
+})
 var $fsm = new StateMachine({
     init: '0',
     transitions: [{
@@ -130,20 +152,29 @@ if (phat == 1) {
     $fsm.work3();
 }
 console.log(day);
-var ese = JSON.parse(sessionStorage.getItem('ing'));
+
 console.log($fsm.state)
-var asd = JSON.parse(sessionStorage.getItem('zing'));
+
 var wote = JSON.parse(sessionStorage.getItem('s'));
 //输入死亡人的死亡方式和身份
 for (i = 0; i < ded.length; i++) {
+    //i=0, eq = 0 , 
+    //i=1, eq =0 ,
+    //i=2 , eq=1
+    //i=3, eq =1 
+     //i=4, eq=2 
     if (i % 2 == 0) {
-        $(".fren").eq(day-1).after(ded[i]+1  + "号被杀手杀死，" + "他的身份是" +peoplo[ded[i]]);
+        
+        $(".fren").eq(Math.floor(i/2)).after(ded[i]+1  + "号被杀手杀死，" + "他的身份是" +peoplo[ded[i]]);
     }else{
-        $(".fren3").eq(day-1).after(ded[i]+1 + "号被投票投死，" + "他的身份是" +peoplo[ded[i]]);
+        $(".fren3").eq(Math.floor(i/2)).after(ded[i]+1 + "号被投票投死，" + "他的身份是" +peoplo[ded[i]]);
     }
+    console.log(i-day)
+    console.log(i-(day+1));
 }
 // sessionStorage.removeItem('z');
 $(".again").click(function () {
+    sessionStorage.removeItem('fun');
     sessionStorage.removeItem('ing');
     sessionStorage.removeItem('allhu');
     sessionStorage.removeItem('dayi');

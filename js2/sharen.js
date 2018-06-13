@@ -3,7 +3,9 @@ var data2 = JSON.parse(sessionStorage.getItem('f'));
 var data3 = JSON.parse(sessionStorage.getItem('a'));
 var data4 = JSON.parse(sessionStorage.getItem('ning'));
 var alivepe = JSON.parse(sessionStorage.getItem('huing'));
-var fore =JSON.parse(sessionStorage.getItem('fore'));
+var fore = JSON.parse(sessionStorage.getItem('fore'));
+var fore1 = JSON.parse(sessionStorage.getItem('hu'));
+var fore2 = JSON.parse(sessionStorage.getItem('ki'));
 console.log(data2);
 var peoplo = [];
 var t = 0;
@@ -11,11 +13,43 @@ var q;
 var ki = [];
 var alive = [];
 var ever = [];
-var hu = [];
-if(fore==0){
-    document.getElementById('topc').innerHTML="全民投票";
-    document.getElementsByClassName('ship')[0].innerHTML="发言讨论结束，大家请投票"
-    document.getElementsByClassName('head')[0].innerHTML="点击投票数最多人的头像"
+$(".end").click(function(){
+    sessionStorage.removeItem('fun');
+    sessionStorage.removeItem('ing');
+    sessionStorage.removeItem('allhu');
+    sessionStorage.removeItem('dayi');
+    sessionStorage.removeItem('hu');
+    sessionStorage.removeItem('ki');
+    sessionStorage.removeItem('a');
+    sessionStorage.removeItem('fore');
+    sessionStorage.removeItem('key');
+    sessionStorage.removeItem('zing');
+    sessionStorage.removeItem('z');
+    sessionStorage.removeItem('key');
+    sessionStorage.removeItem('need');
+    sessionStorage.removeItem('day');
+    sessionStorage.removeItem('f');
+    sessionStorage.removeItem('s');
+    sessionStorage.removeItem('ded');
+    sessionStorage.removeItem('ning');
+    sessionStorage.removeItem('v'); //这里的removeItem是清除保存的数据。
+    window.location.href = "yemian.html";
+})
+if (fore1 == undefined) {
+    var hu = [];
+} else {
+    var hu = JSON.parse(sessionStorage.getItem('hu'));
+}
+
+if (fore2 == undefined) {
+    var ki = [];
+} else {
+    var ki = JSON.parse(sessionStorage.getItem('ki'));
+}
+if (fore == 0) {
+    document.getElementById('topc').innerHTML = "全民投票";
+    document.getElementsByClassName('ship')[0].innerHTML = "发言讨论结束，大家请投票"
+    document.getElementsByClassName('head')[0].innerHTML = "点击投票数最多人的头像"
 }
 if (data4 == undefined) {
     var need = [];
@@ -42,12 +76,16 @@ if (time == undefined) {
 for (i = 0; i < data1.length; i++) {
     if (data1[i] === "<div class=killnum><span class=tianpin></span><span class=juewang>平民</span></div>") {
         peoplo.push("平民") //将平民的数组推到 peoplp数组里面
-        hu.push(i)
-        ever.push(i)
+        if (fore1 == undefined) {
+            hu.push(i)
+            ever.push(i)
+        }
     } else {
         peoplo.push("杀手") //将杀手的数组推到 peoplp数组里面
-        ki.push(i)
-        ever.push(i)
+        if (fore2 == undefined) {
+            ki.push(i)
+            ever.push(i)
+        }
     }
 }
 if (data4 == undefined) {
@@ -96,12 +134,14 @@ $(document).ready(function () {
             //将死亡人的序号从其对应的数组里删除
             for (i = 0; i < ki.length; i++) {
                 if (ki[i] == q) {
-                    ki.splice(q - i, 1);
+                    ki.splice(i--, 1);
+
                 }
             }
             for (i = 0; i < hu.length; i++) {
                 if (hu[i] == q) {
-                    hu.splice(q - i, 1);
+                    hu.splice(i--, 1);
+
                 }
                 console.log(i)
             }
@@ -158,7 +198,14 @@ $(document).ready(function () {
                 }
             }
             sessionStorage.setItem('day', JSON.stringify(day));
-            window.location.href = "taiben.html"
+            if (ki.length == hu.length) {
+                sessionStorage.setItem('fun', JSON.stringify("bad"));
+                window.location.href = "jgy.html"
+            } else if (ki.length == 0) {
+                window.location.href = "jgy.html"
+            } else {
+                window.location.href = "taiben.html"
+            }
         }
         console.log(day)
         console.log(need)

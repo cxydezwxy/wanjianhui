@@ -3,6 +3,28 @@ console.log(data1);
 var t = 0;
 var q;
 $(document).ready(function () {
+    $(".end").click(function(){
+        sessionStorage.removeItem('fun');
+        sessionStorage.removeItem('ing');
+        sessionStorage.removeItem('allhu');
+        sessionStorage.removeItem('dayi');
+        sessionStorage.removeItem('hu');
+        sessionStorage.removeItem('ki');
+        sessionStorage.removeItem('a');
+        sessionStorage.removeItem('fore');
+        sessionStorage.removeItem('key');
+        sessionStorage.removeItem('zing');
+        sessionStorage.removeItem('z');
+        sessionStorage.removeItem('key');
+        sessionStorage.removeItem('need');
+        sessionStorage.removeItem('day');
+        sessionStorage.removeItem('f');
+        sessionStorage.removeItem('s');
+        sessionStorage.removeItem('ded');
+        sessionStorage.removeItem('ning');
+        sessionStorage.removeItem('v'); //这里的removeItem是清除保存的数据。
+        window.location.href = "yemian.html";
+    })
     for (i = 0; i < data1.length; i++) {
         t++;
         $("#panda").append("<div class=round>" + data1[i] + "<p class=gry >" + t + "号" + "</p>" + "<img src=10.png class=niff>" + "</div>");
@@ -30,12 +52,11 @@ $(document).ready(function () {
         });
         console.log(data1.length);
     });
-    var qwe = JSON.parse(sessionStorage.getItem('ing'));
-    if (qwe.status == "die") {
-        $(".killnum").eq(qwe.ne - 1).addClass("backll")
+    var data4 = JSON.parse(sessionStorage.getItem('ning'));
+    for (i = 0; i < data4.length; i++) {
+        if (data4[i].status == "die") {
+            $(".killnum").eq(data4[i].ne).addClass("backll") //将死人对应的格子颜色改变成灰色
+        }
     }
-    var asd = JSON.parse(sessionStorage.getItem('xing'));
-    if (asd.status == "die") {
-        $(".killnum").eq(asd.ne - 1).addClass("backll")
-    }   
+
 });
