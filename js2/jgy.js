@@ -8,30 +8,12 @@ var fore = JSON.parse(sessionStorage.getItem('fore'));
 $(document).ready(function () {
     //点击右上角×按钮删除数据并跳转页面
     $(".end").click(function () {
-        sessionStorage.removeItem('fun');
-        sessionStorage.removeItem('ing');
-        sessionStorage.removeItem('allhu');
-        sessionStorage.removeItem('dayi');
-        sessionStorage.removeItem('hu');
-        sessionStorage.removeItem('ki');
-        sessionStorage.removeItem('a');
-        sessionStorage.removeItem('fore');
-        sessionStorage.removeItem('key');
-        sessionStorage.removeItem('zing');
-        sessionStorage.removeItem('z');
-        sessionStorage.removeItem('key');
-        sessionStorage.removeItem('need');
-        sessionStorage.removeItem('day');
-        sessionStorage.removeItem('f');
-        sessionStorage.removeItem('s');
-        sessionStorage.removeItem('ded');
-        sessionStorage.removeItem('ning');
-        sessionStorage.removeItem('v');
+        sessionStorage.clear()
         window.location.href = "yemian.html";
     })
     //判断fun为bad时杀手胜利否则为平民胜利
     if (fun == "bad") {
-        $(".box20").html("杀手胜利") 
+        $(".box20").html("杀手胜利")
     } else {
         $(".box20").html("平民胜利")
     }
@@ -40,7 +22,7 @@ $(document).ready(function () {
         "<p>" + "平民还剩" + hu.length + "人" + "</p>")
     if (fore == "0") {
         //这里是渲染天数，但因为投票杀死人后如果游戏胜利了天数还是+1所以要减一天
-        for (var w = 0; w < day-1; w++) {
+        for (var w = 0; w < day - 1; w++) {
             if (w > 0) {
                 $(".oneday").first().clone().prependTo($(".all")); //设置当天数大于1时用clone复制.warp到html到main中去
             }
@@ -71,25 +53,7 @@ $(document).ready(function () {
     }
     //点击再来一局清除数据并跳转页面。
     $(".again").click(function () {
-        sessionStorage.removeItem('fun');
-        sessionStorage.removeItem('ing');
-        sessionStorage.removeItem('allhu');
-        sessionStorage.removeItem('dayi');
-        sessionStorage.removeItem('hu');
-        sessionStorage.removeItem('ki');
-        sessionStorage.removeItem('a');
-        sessionStorage.removeItem('fore');
-        sessionStorage.removeItem('key');
-        sessionStorage.removeItem('zing');
-        sessionStorage.removeItem('z');
-        sessionStorage.removeItem('key');
-        sessionStorage.removeItem('need');
-        sessionStorage.removeItem('day');
-        sessionStorage.removeItem('f');
-        sessionStorage.removeItem('s');
-        sessionStorage.removeItem('ded');
-        sessionStorage.removeItem('ning');
-        sessionStorage.removeItem('v');
+        sessionStorage.clear()
         window.location.href = "yemian.html";
     })
 })

@@ -3,26 +3,8 @@ var ded = JSON.parse(sessionStorage.getItem('ded'));
 var peoplo = JSON.parse(sessionStorage.getItem('allhu'));
 console.log(day);
 // 有限状态机
-$(".end").click(function(){
-    sessionStorage.removeItem('fun');
-    sessionStorage.removeItem('ing');
-    sessionStorage.removeItem('allhu');
-    sessionStorage.removeItem('dayi');
-    sessionStorage.removeItem('hu');
-    sessionStorage.removeItem('ki');
-    sessionStorage.removeItem('a');
-    sessionStorage.removeItem('fore');
-    sessionStorage.removeItem('key');
-    sessionStorage.removeItem('zing');
-    sessionStorage.removeItem('z');
-    sessionStorage.removeItem('key');
-    sessionStorage.removeItem('need');
-    sessionStorage.removeItem('day');
-    sessionStorage.removeItem('f');
-    sessionStorage.removeItem('s');
-    sessionStorage.removeItem('ded');
-    sessionStorage.removeItem('ning');
-    sessionStorage.removeItem('v'); //这里的removeItem是清除保存的数据。
+$(".end").click(function () {
+    sessionStorage.clear() //这里的removeItem是清除保存的数据。
     window.location.href = "yemian.html";
 })
 var $fsm = new StateMachine({
@@ -111,9 +93,7 @@ $(".fren").eq(day - 1).click(function () { //eq（0）表示选中的 第一天�
     window.location.href = "sharen.html"; //点击跳转
     //这里是通过判断wote==1来显示死亡的过程
 });
-// $(function () {
-//     $(".fren").eq(y).after("<p>" + ese.ne + "号" + "被杀手杀死,真实身份是" + ese.Identity + "</p>");
-// })
+
 $(".fren1").eq(day - 1).click(function () { //第二个状态的运行
     $fsm.work2();
     sessionStorage.setItem('z', JSON.stringify("2")); //设置第一个状态点击后为2
@@ -127,16 +107,14 @@ $(".fren2").eq(day - 1).click(function () {
 $(".fren3").eq(day - 1).click(function () {
     $fsm.work4();
     alert("请全民投票")
-    // sessionStorage.removeItem('z');
+
     sessionStorage.setItem('z', JSON.stringify("4")); //设置第一个状态点击后为4
     sessionStorage.setItem('a', JSON.stringify("pros")); //这里是点击第四个按钮保存pros，然后可以判断是通过投票杀死的
     //这里是通过判断phat == 4来显示死亡的过程\
     sessionStorage.removeItem('f');
     window.location.href = "sharen.html";
 });
-// $(function () {
-//     $(".fren3").eq(day-1).after("<p>" + asd.ne + "号" + "被投票投死了,真实身份是" + asd.Identity + "</p>");
-// })
+
 console.log($fsm.state);
 //保存数据，这里不保存phat=4的数据是因为当phat=4时会在循环下一个天数时就将状态改变到下一个天数
 var phat = JSON.parse(sessionStorage.getItem('z')); //设置没一个步骤对应的状态值
@@ -158,41 +136,15 @@ console.log($fsm.state)
 var wote = JSON.parse(sessionStorage.getItem('s'));
 //输入死亡人的死亡方式和身份
 for (i = 0; i < ded.length; i++) {
-    //i=0, eq = 0 , 
-    //i=1, eq =0 ,
-    //i=2 , eq=1
-    //i=3, eq =1 
-     //i=4, eq=2 
     if (i % 2 == 0) {
-        
-        $(".fren").eq(Math.floor(i/2)).after(ded[i]+1  + "号被杀手杀死，" + "他的身份是" +peoplo[ded[i]]);
-    }else{
-        $(".fren3").eq(Math.floor(i/2)).after(ded[i]+1 + "号被投票投死，" + "他的身份是" +peoplo[ded[i]]);
+        $(".fren").eq(Math.floor(i / 2)).after(ded[i] + 1 + "号被杀手杀死，" + "他的身份是" + peoplo[ded[i]]);
+    } else {
+        $(".fren3").eq(Math.floor(i / 2)).after(ded[i] + 1 + "号被投票投死，" + "他的身份是" + peoplo[ded[i]]);
     }
-    console.log(i-day)
-    console.log(i-(day+1));
 }
 // sessionStorage.removeItem('z');
 $(".again").click(function () {
-    sessionStorage.removeItem('fun');
-    sessionStorage.removeItem('ing');
-    sessionStorage.removeItem('allhu');
-    sessionStorage.removeItem('dayi');
-    sessionStorage.removeItem('hu');
-    sessionStorage.removeItem('ki');
-    sessionStorage.removeItem('a');
-    sessionStorage.removeItem('fore');
-    sessionStorage.removeItem('key');
-    sessionStorage.removeItem('zing');
-    sessionStorage.removeItem('z');
-    sessionStorage.removeItem('key');
-    sessionStorage.removeItem('need');
-    sessionStorage.removeItem('day');
-    sessionStorage.removeItem('f');
-    sessionStorage.removeItem('s');
-    sessionStorage.removeItem('ded');
-    sessionStorage.removeItem('ning');
-    sessionStorage.removeItem('v'); //这里的removeItem是清除保存的数据。
+    sessionStorage.clear() //这里的removeItem是清除保存的数据。
     window.location.href = "yemian.html";
 })
 console.log($fsm.state)

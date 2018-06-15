@@ -11,28 +11,11 @@
     var m = 0;
     var l = 1;
     var jie;
-    $(".end").click(function(){
-        sessionStorage.removeItem('fun');
-        sessionStorage.removeItem('ing');
-        sessionStorage.removeItem('allhu');
-        sessionStorage.removeItem('dayi');
-        sessionStorage.removeItem('hu');
-        sessionStorage.removeItem('ki');
-        sessionStorage.removeItem('a');
-        sessionStorage.removeItem('fore');
-        sessionStorage.removeItem('key');
-        sessionStorage.removeItem('zing');
-        sessionStorage.removeItem('z');
-        sessionStorage.removeItem('key');
-        sessionStorage.removeItem('need');
-        sessionStorage.removeItem('day');
-        sessionStorage.removeItem('f');
-        sessionStorage.removeItem('s');
-        sessionStorage.removeItem('ded');
-        sessionStorage.removeItem('ning');
-        sessionStorage.removeItem('v'); //这里的removeItem是清除保存的数据。
+    $(".end").click(function () {
+        sessionStorage.clear() //这里的removeItem是清除保存的数据。
         window.location.href = "yemian.html";
     })
+
     function puss() {
         i++;
         console.log(idcar)
@@ -58,7 +41,7 @@
                 console.log(i)
                 document.getElementById("cont").innerHTML = jie;
             }
-        }else{
+        } else {
             window.location.href = "riji.html";
         }
         if (l > data1.length) {

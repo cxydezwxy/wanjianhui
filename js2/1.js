@@ -60,18 +60,15 @@ function temp() {
     var arr = [];
     for (i = 0; i < kill; i++) {
         arr[i] = "<div class=killnum><span class=tianping></span><span class=juewang>杀手</span></div>";
-
         have.push(arr)
     }
-    console.log(arr);    
+    console.log(arr);
     var arr2 = [];
     for (i = 0; i < peoplo; i++) {
         arr2[i] = "<div class=killnum><span class=tianpin></span><span class=juewang>平民</span></div>";
         have.push(arr2)
-
     }
     console.log(have);
-    
     var gamenum = arr.concat(arr2);
     _array = gamenum.concat();
     for (var i = gamenum.length; i--;) {
@@ -94,7 +91,7 @@ function kass() {
     } else {
         alert("请设置玩家匹配")
     }
-     console.log(have)
+    console.log(have)
 }
 sessionStorage.removeItem('key1');
 sessionStorage.removeItem('key2');
