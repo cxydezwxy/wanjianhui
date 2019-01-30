@@ -103,7 +103,7 @@ function number() {
 var intst;
 function stra() {
     clearInterval(intst);
-    intst = window.setInterval("number()", 1000);
+    intst = window.setInterval("number()", 1);
 }
 function stop() {
     window.clearTimeout(intst);
